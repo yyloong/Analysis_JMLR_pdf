@@ -400,7 +400,7 @@ def analysis_result(pdf_name, result):
 
 if __name__ == "__main__":
 
-    pdf_path = "JMLR 2024"
+    pdf_path = "../JMLR 2024"
 
     fail_list = []
     paper_metadata_set = []
