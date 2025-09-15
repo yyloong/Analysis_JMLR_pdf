@@ -2,6 +2,7 @@ from typing import TypeAlias, Optional, Union, List, Tuple, Dict, Any
 from pathlib import Path
 
 import re
+import pprint
 import unicodedata
 import fitz  # PyMuPDF
 
@@ -27,6 +28,12 @@ if platform.system() == "Windows":
 PiecesType: TypeAlias = List[Dict[str, Union[str, Tuple[float, float, float, float]]]]
 
 
+class JMLRPDFExtractionError(Exception):
+    """自定义异常类, 用于标识无法从中提取文本区块的 PDF 文件"""
+
+    pass
+
+
 def normalize_text(text: str) -> str:
     """
     规范化文本内容:
@@ -39,6 +46,7 @@ def normalize_text(text: str) -> str:
     Returns:
         str: 规范化后的文本内容
     """
+
     # 兼容性分解, 彻底分解等价的 Unicode 字符, 如将 "ﬁ" 分解为 "fi"
     text = unicodedata.normalize("NFKD", text)
     # 去除首尾空白符
@@ -51,15 +59,38 @@ def normalize_text(text: str) -> str:
     return text
 
 
-def coarse_filter_pieces(pieces: PiecesType) -> PiecesType:
+def print_pieces(pieces: PiecesType, pdf_source: str = "") -> None:
+    """
+    美观打印文本区块内容
+
+    Args:
+        pieces (PiecesType): 待打印的文本区块列表
+        pdf_source (str): PDF 文件来源, 用于打印调试信息
+    """
+
+    if len(pdf_source) > 0:
+        print(f"{RED}--- Pieces of {repr(pdf_source)} ---{RESET}\n")
+    else:
+        print(f"{RED}--- Pieces ---{RESET}\n")
+    for piece in pieces:
+        text = piece["text"]
+        x0, y0, x1, y1 = piece["rect"]
+        indented_text = text.replace("\n", "\n" + " " * 16)  # 缩进换行, 保持美观
+        print(f"Box rectangle:  {GREEN}({x0:.1f}, {y0:.1f}) -> ({x1:.1f}, {y1:.1f}){RESET}  # (x0, y0) -> (x1, y1)")
+        print(f"Text content:   {YELLOW}{indented_text}{RESET}\n")
+
+
+def coarse_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType:
     """
     粗筛文本区块, 过滤摘要和正文
 
     Args:
         pieces (PiecesType): 待过滤的文本区块列表
+        pdf_source (str): PDF 文件来源, 用于打印调试信息
     Returns:
         PiecesType: 过滤后的文本区块列表
     """
+
     # "Editor" 之后, "Copyright" 之前, 完全丢弃
     left_index = -1
     right_index = -1
@@ -67,13 +98,16 @@ def coarse_filter_pieces(pieces: PiecesType) -> PiecesType:
         # JMLR 格式的论文中, "Editor" 之后的内容为摘要
         if re.search(r"(?u)Editor", pieces[i]["text"], re.IGNORECASE):
             left_index = i
-        # JMLR 格式的论文中, "c\u20dd" (LaTeX 的 Copyright 符号) 之后的内容为页脚
-        if re.search(r"(?u)c\u20dd", pieces[i]["text"], re.IGNORECASE):
+        elif re.search(r"(?u)Abstract", pieces[i]["text"], re.IGNORECASE):
+            left_index = i - 1
+        # JMLR 格式的论文中, Copyright 符号之后的内容为页脚
+        if re.search(r"(?u)(c\u20dd)|(c\n\u20dd)(c\u25cb)||(\u00a9)", pieces[i]["text"], re.IGNORECASE):
             right_index = i
     if left_index != -1 and right_index != -1 and left_index < right_index:
         filtered_pieces = pieces[:left_index] + pieces[right_index:]
         return filtered_pieces
     else:
+        print_pieces(pieces=pieces, pdf_source=pdf_source)
         return pieces
 
 
@@ -106,21 +140,20 @@ def parse_jmlr_pdf(pdf_path: Path, verbose: bool = True) -> PiecesType:
         piece = {"text": text, "rect": (x0, y0, x1, y1)}
         pieces.append(piece)
 
+    # 如果没有提取到任何文本区块, 则报错
+    if len(pieces) == 0:
+        print(f"{RED}[!] Error: No pieces extracted from {repr(pdf_path)}{RESET}")
+        raise JMLRPDFExtractionError(f"No pieces extracted from {repr(pdf_path)}")
+
     # 依据左上角的坐标排序区块, 保持从上到下和从左到右的顺序
     pieces.sort(key=lambda piece: (piece["rect"][1], piece["rect"][0]))
 
     # 粗筛文本区块, 过滤摘要和正文
-    pieces = coarse_filter_pieces(pieces)
+    pieces = coarse_filter_pieces(pieces=pieces, pdf_source=repr(pdf_path))
 
     # 如果开启 verbose 模式, 打印文档区块内容
     if verbose:
-        print(f"{RED}--- Pieces of {repr(pdf_path)} ---{RESET}\n")
-        for piece in pieces:
-            text = piece["text"]
-            x0, y0, x1, y1 = piece["rect"]
-            indented_text = text.replace("\n", "\n" + " " * 16)  # 缩进换行, 保持美观
-            print(f"Box rectangle:  {GREEN}({x0:.1f}, {y0:.1f}) -> ({x1:.1f}, {y1:.1f}){RESET}  # (x0, y0) -> (x1, y1)")
-            print(f"Text content:   {YELLOW}{indented_text}{RESET}\n")
+        print_pieces(pieces=pieces, pdf_source=str(pdf_path))
 
     # 关闭文档, 返回内容
     jmlr.close()
@@ -138,5 +171,23 @@ def main() -> None:
     parse_jmlr_pdf(args.pdf_path, verbose=True)
 
 
+def test() -> None:
+    pdf_dirs = [
+        "../jmlr_2020/main_track",
+        "../jmlr_2021/main_track",
+        "../jmlr_2022/main_track",
+        "../jmlr_2023/main_track",
+        "../jmlr_2024/main_track",
+    ]
+    for pdf_dir in pdf_dirs:
+        for pdf_name in os.listdir(pdf_dir):
+            pdf_path = os.path.join(pdf_dir, pdf_name)
+            try:
+                parse_jmlr_pdf(pdf_path, verbose=False)
+            except JMLRPDFExtractionError:
+                pass
+
+
 if __name__ == "__main__":
-    main()
+    # main()
+    test()
