@@ -215,7 +215,7 @@ def get_authors_line(first_authors_line, editor_line, result):
 def analysis_normal_format(line, result, metadata_dict):
     """
     分析常规格式的论文内容, 提取作者、机构和编辑信息。
-    
+
     处理流程:
     1. 查找编辑行位置
     2. 获取所有作者行
@@ -234,7 +234,7 @@ def analysis_normal_format(line, result, metadata_dict):
     """
 
     # 获取编辑行位置
-    editor_line = get_editor_line(result) 
+    editor_line = get_editor_line(result)
     if editor_line == None:
         return False, metadata_dict["title"], "No editor"
 
@@ -260,7 +260,7 @@ def analysis_normal_format(line, result, metadata_dict):
         while now_author[-1] in ["*", "†"]:
             now_author = now_author[:-1]
         authors.append({"name": now_author, "affiliation": []})
-        
+
         # 定位到作者名下方的机构信息起始位置
         line = author_line + 1
         while line < len(result) and result[line]["location"][1] < result[author_line]["location"][3]:
@@ -311,7 +311,7 @@ def analysis_normal_format(line, result, metadata_dict):
 def analysis_result(pdf_name, result):
     """
     分析PDF文件内容, 提取论文的元数据信息。
-    
+
     处理流程:
     1. 查找并验证JMLR期刊头部信息
     2. 提取论文标题:
@@ -322,17 +322,17 @@ def analysis_result(pdf_name, result):
        - id格式: 作者标记为数字编号
        - normal格式: 常规的作者-机构对应格式
     4. 根据不同格式调用对应的处理函数
-    
+
     Args:
         pdf_name (str): PDF文件名
         result (list): PDF解析出的文本块列表
-        
+
     Returns:
         tuple: (是否解析成功, 元数据字典或标题, 错误信息)
     """
 
     # 从第一行开始查找JMLR期刊头部信息
-    line = 0 
+    line = 0
     header = result[line]["text"]
     while not is_valid_jmlr_format(header) and line + 1 < len(result):
         line += 1
@@ -349,7 +349,7 @@ def analysis_result(pdf_name, result):
     pdf_name = pdf_name[:-4] if pdf_name.endswith(".pdf") else pdf_name
     print(result)
     metadata_dict = dict()
-    
+
     # 提取标题文本,直到与pdf文件名匹配
     metadata_dict["title"] = result[line]["text"]
     while line + 1 < len(result) and not compare_alphanumeric(metadata_dict["title"], pdf_name):
@@ -361,7 +361,7 @@ def analysis_result(pdf_name, result):
         return False, pdf_name, "cannot find title"
 
     # 跳过标题所占的多行
-    title_line = line  
+    title_line = line
     line += 1
     while result[line]["location"][1] < result[title_line]["location"][3]:
         line += 1
@@ -372,11 +372,11 @@ def analysis_result(pdf_name, result):
         """
         判断文档是否为id格式
         通过检查作者后是否紧跟数字id来判断
-        
+
         Args:
             line (int): 当前处理行号
             result (list): PDF解析结果
-            
+
         Returns:
             bool: True表示id格式, False表示常规格式
         """
