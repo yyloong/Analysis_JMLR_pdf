@@ -33,7 +33,7 @@ for pdf in $PAPERS_DIR/*.pdf; do
             echo "Error processing $pdf"
         fi
     else
-        echo "No PDF files found in ../JMLR 2024"
+        echo "No PDF files found in $PAPERS_DIR"
         exit 1
     fi
 done
