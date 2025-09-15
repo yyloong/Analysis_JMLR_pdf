@@ -1,0 +1,3771 @@
+volume = 22
+[[papers]]
+title = "On the Optimality of Kernel-Embedding Based Goodness-of-Fit Tests"
+authors = [ "Krishnakumar Balasubramanian", "Tong Li", "Ming Yuan",]
+volume = 22
+issue = 1
+page_start = 1
+page_end = 45
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/17-570.html"
+url_pdf = "https://jmlr.org/papers/volume22/17-570/17-570.pdf"
+url_bib = "https://jmlr.org/papers/v22/17-570.bib"
+
+[[papers]]
+title = "Domain Generalization by Marginal Transfer Learning"
+authors = [ "Gilles Blanchard", "Aniket Anand Deshmukh", "Urun Dogan", "Gyemin Lee", "Clayton Scott",]
+volume = 22
+issue = 2
+page_start = 1
+page_end = 55
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/17-679.html"
+url_pdf = "https://jmlr.org/papers/volume22/17-679/17-679.pdf"
+url_bib = "https://jmlr.org/papers/v22/17-679.bib"
+
+[[papers]]
+title = "Regulating Greed Over Time in Multi-Armed Bandits"
+authors = [ "Stefano TracÃ", "Cynthia Rudin", "Weiyu Yan",]
+volume = 22
+issue = 3
+page_start = 1
+page_end = 99
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/17-720.html"
+url_pdf = "https://jmlr.org/papers/volume22/17-720/17-720.pdf"
+url_bib = "https://jmlr.org/papers/v22/17-720.bib"
+
+[[papers]]
+title = "An Empirical Study of Bayesian Optimization: Acquisition Versus Partition"
+authors = [ "Erich Merrill", "Alan Fern", "Xiaoli Fern", "Nima Dolatnia",]
+volume = 22
+issue = 4
+page_start = 1
+page_end = 25
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-220.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-220/18-220.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-220.bib"
+
+[[papers]]
+title = "The Decoupled Extended Kalman Filter for Dynamic Exponential-Family Factorization Models"
+authors = [ "Carlos A. Gomez-Uribe", "Brian Karrer",]
+volume = 22
+issue = 5
+page_start = 1
+page_end = 25
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-417.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-417/18-417.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-417.bib"
+
+[[papers]]
+title = "Consistent estimation of small masses in feature sampling"
+authors = [ "Fadhel Ayed", "Marco Battiston", "Federico Camerlenghi", "Stefano Favaro",]
+volume = 22
+issue = 6
+page_start = 1
+page_end = 28
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-534.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-534/18-534.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-534.bib"
+
+[[papers]]
+title = "Preference-based Online Learning with Dueling Bandits: A Survey"
+authors = [ "Viktor Bengs", "RÃ³bert Busa-Fekete", "Adil El Mesaoudi-Paul", "Eyke HÃ¼llermeier",]
+volume = 22
+issue = 7
+page_start = 1
+page_end = 108
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-546.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-546/18-546.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-546.bib"
+
+[[papers]]
+title = "A Unified Framework for Random Forest Prediction Error Estimation"
+authors = [ "Benjamin Lu", "Johanna Hardin",]
+volume = 22
+issue = 8
+page_start = 1
+page_end = 41
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-558.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-558/18-558.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-558.bib"
+
+[[papers]]
+title = "Convex Clustering: Model, Theoretical Guarantee and Efficient Algorithm"
+authors = [ "Defeng Sun", "Kim-Chuan Toh", "Yancheng Yuan",]
+volume = 22
+issue = 9
+page_start = 1
+page_end = 32
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-694.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-694/18-694.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-694.bib"
+
+[[papers]]
+title = "Mixing Time of Metropolis-Hastings for Bayesian Community Detection"
+authors = [ "Bumeng Zhuo", "Chao Gao",]
+volume = 22
+issue = 10
+page_start = 1
+page_end = 89
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-770.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-770/18-770.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-770.bib"
+
+[[papers]]
+title = "Unfolding-Model-Based Visualization: Theory, Method and Applications"
+authors = [ "Yunxiao Chen", "Zhiliang Ying", "Haoran Zhang",]
+volume = 22
+issue = 11
+page_start = 1
+page_end = 51
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-846.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-846/18-846.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-846.bib"
+
+[[papers]]
+title = "Global and Quadratic Convergence of Newton Hard-Thresholding Pursuit"
+authors = [ "Shenglong Zhou", "Naihua Xiu", "Hou-Duo Qi",]
+volume = 22
+issue = 12
+page_start = 1
+page_end = 45
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-026.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-026/19-026.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-026.bib"
+
+[[papers]]
+title = "Homogeneity Structure Learning in Large-scale Panel Data with Heavy-tailed Errors"
+authors = [ "Di Xiao", "Yuan Ke", "Runze Li",]
+volume = 22
+issue = 13
+page_start = 1
+page_end = 42
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-1018.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-1018/19-1018.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-1018.bib"
+
+[[papers]]
+title = "On Multi-Armed Bandit Designs for Dose-Finding Trials"
+authors = [ "Maryam Aziz", "Emilie Kaufmann", "Marie-Karelle Riviere",]
+volume = 22
+issue = 14
+page_start = 1
+page_end = 38
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-228.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-228/19-228.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-228.bib"
+
+[[papers]]
+title = "Simple and Fast Algorithms for Interactive Machine Learning with Random Counter-examples"
+authors = [ "Jagdeep Singh Bhatia",]
+volume = 22
+issue = 15
+page_start = 1
+page_end = 30
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-372.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-372/19-372.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-372.bib"
+
+[[papers]]
+title = "Pykg2vec: A Python Library for Knowledge Graph Embedding"
+authors = [ "Shih-Yuan Yu", "Sujit Rokka Chhetri", "Arquimedes Canedo", "Palash Goyal", "Mohammad Abdullah Al Faruque",]
+volume = 22
+issue = 16
+page_start = 1
+page_end = 6
+year = 2021
+is_mloss = true
+url_abs = "https://jmlr.org/papers/v22/19-433.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-433/19-433.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-433.bib"
+
+[[papers]]
+title = "Continuous Time Analysis of Momentum Methods"
+authors = [ "Nikola B. Kovachki", "Andrew M. Stuart",]
+volume = 22
+issue = 17
+page_start = 1
+page_end = 40
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-466.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-466/19-466.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-466.bib"
+
+[[papers]]
+title = "A Unified Sample Selection Framework for Output Noise Filtering: An Error-Bound Perspective"
+authors = [ "Gaoxia Jiang", "Wenjian Wang", "Yuhua Qian", "Jiye Liang",]
+volume = 22
+issue = 18
+page_start = 1
+page_end = 66
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-498.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-498/19-498.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-498.bib"
+
+[[papers]]
+title = "Ranking and synchronization from pairwise measurements via SVD"
+authors = [ "Alexandre d'Aspremont", "Mihai Cucuringu", "Hemant Tyagi",]
+volume = 22
+issue = 19
+page_start = 1
+page_end = 63
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-542.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-542/19-542.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-542.bib"
+
+[[papers]]
+title = "Aggregated Hold-Out"
+authors = [ "Guillaume Maillard", "Sylvain Arlot", "Matthieu Lerasle",]
+volume = 22
+issue = 20
+page_start = 1
+page_end = 55
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-624.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-624/19-624.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-624.bib"
+
+[[papers]]
+title = "A Fast Globally Linearly Convergent Algorithm for the Computation of Wasserstein Barycenters"
+authors = [ "Lei Yang", "Jia Li", "Defeng Sun", "Kim-Chuan Toh",]
+volume = 22
+issue = 21
+page_start = 1
+page_end = 37
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-629.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-629/19-629.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-629.bib"
+
+[[papers]]
+title = "When random initializations help: a study of variational inference for community detection"
+authors = [ "Purnamrita Sarkar", "Y. X. Rachel Wang", "Soumendu S. Mukherjee",]
+volume = 22
+issue = 22
+page_start = 1
+page_end = 46
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-630.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-630/19-630.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-630.bib"
+
+[[papers]]
+title = "A Two-Level Decomposition Framework Exploiting First and Second Order Information for SVM Training Problems"
+authors = [ "Giulio Galvan", "Matteo Lapucci", "Chih-Jen Lin", "Marco Sciandrone",]
+volume = 22
+issue = 23
+page_start = 1
+page_end = 38
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-632.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-632/19-632.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-632.bib"
+
+[[papers]]
+title = "Entangled Kernels - Beyond Separability"
+authors = [ "Riikka Huusari", "Hachem Kadri",]
+volume = 22
+issue = 24
+page_start = 1
+page_end = 40
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-665.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-665/19-665.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-665.bib"
+
+[[papers]]
+title = "Generalization Performance of Multi-pass Stochastic Gradient Descent with Convex Loss Functions"
+authors = [ "Yunwen Lei", "Ting Hu", "Ke Tang",]
+volume = 22
+issue = 25
+page_start = 1
+page_end = 41
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-716.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-716/19-716.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-716.bib"
+
+[[papers]]
+title = "Finite Time LTI System Identification"
+authors = [ "Tuhin Sarkar", "Alexander Rakhlin", "Munther A. Dahleh",]
+volume = 22
+issue = 26
+page_start = 1
+page_end = 61
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-725.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-725/19-725.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-725.bib"
+
+[[papers]]
+title = "Inference In High-dimensional Single-Index Models Under Symmetric Designs"
+authors = [ "Hamid Eftekhari", "Moulinath Banerjee", "Ya'acov Ritov",]
+volume = 22
+issue = 27
+page_start = 1
+page_end = 63
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-744.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-744/19-744.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-744.bib"
+
+[[papers]]
+title = "Tsallis-INF: An Optimal Algorithm for Stochastic and Adversarial Bandits"
+authors = [ "Julian Zimmert", "Yevgeny Seldin",]
+volume = 22
+issue = 28
+page_start = 1
+page_end = 49
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-753.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-753/19-753.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-753.bib"
+
+[[papers]]
+title = "Single and Multiple Change-Point Detection with Differential Privacy"
+authors = [ "Wanrong Zhang", "Sara Krehbiel", "Rui Tuo", "Yajun Mei", "Rachel Cummings",]
+volume = 22
+issue = 29
+page_start = 1
+page_end = 36
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-770.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-770/19-770.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-770.bib"
+
+[[papers]]
+title = "A Review of Robot Learning for Manipulation: Challenges, Representations, and Algorithms"
+authors = [ "Oliver Kroemer", "Scott Niekum", "George Konidaris",]
+volume = 22
+issue = 30
+page_start = 1
+page_end = 82
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-804.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-804/19-804.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-804.bib"
+
+[[papers]]
+title = "FLAME: A Fast Large-scale Almost Matching Exactly Approach to Causal Inference"
+authors = [ "Tianyu Wang", "Marco Morucci", "M. Usaid Awan", "Yameng Liu", "Sudeepa Roy", "Cynthia Rudin", "Alexander Volfovsky",]
+volume = 22
+issue = 31
+page_start = 1
+page_end = 41
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-853.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-853/19-853.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-853.bib"
+
+[[papers]]
+title = "Learning interaction kernels in heterogeneous systems of agents from multiple trajectories"
+authors = [ "Fei Lu", "Mauro Maggioni", "Sui Tang",]
+volume = 22
+issue = 32
+page_start = 1
+page_end = 67
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-861.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-861/19-861.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-861.bib"
+
+[[papers]]
+title = "Asynchronous Online Testing of Multiple Hypotheses"
+authors = [ "Tijana Zrnic", "Aaditya Ramdas", "Michael I. Jordan",]
+volume = 22
+issue = 33
+page_start = 1
+page_end = 39
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-910.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-910/19-910.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-910.bib"
+
+[[papers]]
+title = "Neighborhood Structure Assisted Non-negative Matrix Factorization and Its Application in Unsupervised Point-wise Anomaly Detection"
+authors = [ "Imtiaz Ahmed", "Xia Ben Hu", "Mithun P. Acharya", "Yu Ding",]
+volume = 22
+issue = 34
+page_start = 1
+page_end = 32
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-924.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-924/19-924.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-924.bib"
+
+[[papers]]
+title = "Learning and Planning for Time-Varying MDPs Using Maximum Likelihood Estimation"
+authors = [ "Melkior Ornik", "Ufuk Topcu",]
+volume = 22
+issue = 35
+page_start = 1
+page_end = 40
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-006.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-006/20-006.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-006.bib"
+
+[[papers]]
+title = "Multi-class Gaussian Process Classification with Noisy Inputs"
+authors = [ "Carlos Villacampa-Calvo", "Bryan ZaldÃxadvar", "Eduardo C. Garrido-MerchÃ¡n", "Daniel HernÃ¡ndez-Lobato",]
+volume = 22
+issue = 36
+page_start = 1
+page_end = 52
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-107.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-107/20-107.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-107.bib"
+
+[[papers]]
+title = "A Bayesian Contiguous Partitioning Method for Learning Clustered Latent Variables"
+authors = [ "Zhao Tang Luo", "Huiyan Sang", "Bani Mallick",]
+volume = 22
+issue = 37
+page_start = 1
+page_end = 52
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-136.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-136/20-136.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-136.bib"
+
+[[papers]]
+title = "Risk-Averse Learning by Temporal Difference Methods with Markov Risk Measures"
+authors = [ "Umit KÃ¶se", "Andrzej RuszczyÅx84ski",]
+volume = 22
+issue = 38
+page_start = 1
+page_end = 34
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-168.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-168/20-168.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-168.bib"
+
+[[papers]]
+title = "giotto-tda: : A Topological Data Analysis Toolkit for Machine Learning and Data Exploration"
+authors = [ "Guillaume Tauzin", "Umberto Lupo", "Lewis Tunstall", "Julian Burella PÃ©rez", "Matteo Caorsi", "Anibal M. Medina-Mardones", "Alberto Dassatti", "Kathryn Hess",]
+volume = 22
+issue = 39
+page_start = 1
+page_end = 6
+year = 2021
+is_mloss = true
+url_abs = "https://jmlr.org/papers/v22/20-325.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-325/20-325.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-325.bib"
+
+[[papers]]
+title = "Residual Energy-Based Models for Text"
+authors = [ "Anton Bakhtin", "Yuntian Deng", "Sam Gross", "Myle Ott", "Marc'Aurelio Ranzato", "Arthur Szlam",]
+volume = 22
+issue = 40
+page_start = 1
+page_end = 41
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-326.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-326/20-326.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-326.bib"
+
+[[papers]]
+title = "From Fourier to Koopman: Spectral Methods for Long-term Time Series Prediction"
+authors = [ "Henning Lange", "Steven L. Brunton", "J. Nathan Kutz",]
+volume = 22
+issue = 41
+page_start = 1
+page_end = 38
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-406.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-406/20-406.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-406.bib"
+
+[[papers]]
+title = "High-Order Langevin Diffusion Yields an Accelerated MCMC Algorithm"
+authors = [ "Wenlong Mou", "Yi-An Ma", "Martin J. Wainwright", "Peter L. Bartlett", "Michael I. Jordan",]
+volume = 22
+issue = 42
+page_start = 1
+page_end = 41
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-576.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-576/20-576.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-576.bib"
+
+[[papers]]
+title = "Banach Space Representer Theorems for Neural Networks and Ridge Splines"
+authors = [ "Rahul Parhi", "Robert D. Nowak",]
+volume = 22
+issue = 43
+page_start = 1
+page_end = 40
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-583.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-583/20-583.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-583.bib"
+
+[[papers]]
+title = "Wasserstein barycenters can be computed in polynomial time in fixed dimension"
+authors = [ "Jason M Altschuler", "Enric Boix-Adsera",]
+volume = 22
+issue = 44
+page_start = 1
+page_end = 19
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-588.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-588/20-588.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-588.bib"
+
+[[papers]]
+title = "RaSE: Random Subspace Ensemble Classification"
+authors = [ "Ye Tian", "Yang Feng",]
+volume = 22
+issue = 45
+page_start = 1
+page_end = 93
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-600.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-600/20-600.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-600.bib"
+
+[[papers]]
+title = "Optimal Structured Principal Subspace Estimation: Metric Entropy and Minimax Rates"
+authors = [ "Tony Cai", "Hongzhe Li", "Rong Ma",]
+volume = 22
+issue = 46
+page_start = 1
+page_end = 45
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-610.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-610/20-610.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-610.bib"
+
+[[papers]]
+title = "Understanding Recurrent Neural Networks Using Nonequilibrium Response Theory"
+authors = [ "Soon Hoe Lim",]
+volume = 22
+issue = 47
+page_start = 1
+page_end = 48
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-620.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-620/20-620.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-620.bib"
+
+[[papers]]
+title = "Optimal Feedback Law Recovery by Gradient-Augmented Sparse Polynomial Regression"
+authors = [ "Behzad Azmi", "Dante Kalise", "Karl Kunisch",]
+volume = 22
+issue = 48
+page_start = 1
+page_end = 32
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-755.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-755/20-755.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-755.bib"
+
+[[papers]]
+title = "From Low Probability to High Confidence in Stochastic Convex Optimization"
+authors = [ "Damek Davis", "Dmitriy Drusvyatskiy", "Lin Xiao", "Junyu Zhang",]
+volume = 22
+issue = 49
+page_start = 1
+page_end = 38
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-821.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-821/20-821.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-821.bib"
+
+[[papers]]
+title = "Structure Learning of Undirected Graphical Models for Count Data"
+authors = [ "Nguyen Thi Kim Hue", "Monica Chiogna",]
+volume = 22
+issue = 50
+page_start = 1
+page_end = 53
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-401.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-401/18-401.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-401.bib"
+
+[[papers]]
+title = "Projection-free Decentralized Online Learning for Submodular Maximization over Time-Varying Networks"
+authors = [ "Junlong Zhu", "Qingtao Wu", "Mingchuan Zhang", "Ruijuan Zheng", "Keqin Li",]
+volume = 22
+issue = 51
+page_start = 1
+page_end = 42
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-407.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-407/18-407.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-407.bib"
+
+[[papers]]
+title = "Sparse and Smooth Signal Estimation: Convexification of L0-Formulations"
+authors = [ "Alper Atamturk", "Andres Gomez", "Shaoning Han",]
+volume = 22
+issue = 52
+page_start = 1
+page_end = 43
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-745.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-745/18-745.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-745.bib"
+
+[[papers]]
+title = "Subspace Clustering through Sub-Clusters"
+authors = [ "Weiwei Li", "Jan Hannig", "Sayan Mukherjee",]
+volume = 22
+issue = 53
+page_start = 1
+page_end = 37
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-780.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-780/18-780.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-780.bib"
+
+[[papers]]
+title = "GemBag: Group Estimation of Multiple Bayesian Graphical Models"
+authors = [ "Xinming Yang", "Lingrui Gan", "Naveen N. Narisetty", "Feng Liang",]
+volume = 22
+issue = 54
+page_start = 1
+page_end = 48
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-1006.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-1006/19-1006.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-1006.bib"
+
+[[papers]]
+title = "Integrative Generalized Convex Clustering Optimization and Feature Selection for Mixed Multi-View Data"
+authors = [ "Minjie Wang", "Genevera I. Allen",]
+volume = 22
+issue = 55
+page_start = 1
+page_end = 73
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-1012.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-1012/19-1012.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-1012.bib"
+
+[[papers]]
+title = "Incorporating Unlabeled Data into Distributionally Robust Learning"
+authors = [ "Charlie Frogner", "Sebastian Claici", "Edward Chien", "Justin Solomon",]
+volume = 22
+issue = 56
+page_start = 1
+page_end = 46
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-1023.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-1023/19-1023.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-1023.bib"
+
+[[papers]]
+title = "Normalizing Flows for Probabilistic Modeling and Inference"
+authors = [ "George Papamakarios", "Eric Nalisnick", "Danilo Jimenez Rezende", "Shakir Mohamed", "Balaji Lakshminarayanan",]
+volume = 22
+issue = 57
+page_start = 1
+page_end = 64
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-1028.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-1028/19-1028.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-1028.bib"
+
+[[papers]]
+title = "Estimation and Inference for High Dimensional Generalized Linear Models: A Splitting and Smoothing Approach"
+authors = [ "Zhe Fei", "Yi Li",]
+volume = 22
+issue = 58
+page_start = 1
+page_end = 32
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-132.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-132/19-132.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-132.bib"
+
+[[papers]]
+title = "Predictive Learning on Hidden Tree-Structured Ising Models"
+authors = [ "Konstantinos E. Nikolakakis", "Dionysios S. Kalogerias", "Anand D. Sarwate",]
+volume = 22
+issue = 59
+page_start = 1
+page_end = 82
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-149.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-149/19-149.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-149.bib"
+
+[[papers]]
+title = "A Distributed Method for Fitting Laplacian Regularized Stratified Models"
+authors = [ "Jonathan Tuck", "Shane Barratt", "Stephen Boyd",]
+volume = 22
+issue = 60
+page_start = 1
+page_end = 37
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-345.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-345/19-345.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-345.bib"
+
+[[papers]]
+title = "Stochastic Proximal AUC Maximization"
+authors = [ "Yunwen Lei", "Yiming Ying",]
+volume = 22
+issue = 61
+page_start = 1
+page_end = 45
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-418.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-418/19-418.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-418.bib"
+
+[[papers]]
+title = "How to Gain on Power: Novel  Conditional Independence Tests Based on Short Expansion of Conditional Mutual Information"
+authors = [ "Mariusz Kubkowski", "Jan Mielniczuk", "PaweÅx82 Teisseyre",]
+volume = 22
+issue = 62
+page_start = 1
+page_end = 57
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-600.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-600/19-600.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-600.bib"
+
+[[papers]]
+title = "Geometric structure of graph Laplacian embeddings"
+authors = [ "NicolÃ¡s GarcÃxada Trillos", "Franca Hoffmann", "Bamdad Hosseini",]
+volume = 22
+issue = 63
+page_start = 1
+page_end = 55
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-683.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-683/19-683.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-683.bib"
+
+[[papers]]
+title = "Sparse Tensor Additive Regression"
+authors = [ "Botao Hao", "Boxiang Wang", "Pengyuan Wang", "Jingfei Zhang", "Jian Yang", "Will Wei Sun",]
+volume = 22
+issue = 64
+page_start = 1
+page_end = 43
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-769.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-769/19-769.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-769.bib"
+
+[[papers]]
+title = "Dynamic Tensor Recommender Systems"
+authors = [ "Yanqing Zhang", "Xuan Bi", "Niansheng Tang", "Annie Qu",]
+volume = 22
+issue = 65
+page_start = 1
+page_end = 35
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-792.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-792/19-792.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-792.bib"
+
+[[papers]]
+title = "Approximate Newton Methods"
+authors = [ "Haishan Ye", "Luo Luo", "Zhihua Zhang",]
+volume = 22
+issue = 66
+page_start = 1
+page_end = 41
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-870.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-870/19-870.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-870.bib"
+
+[[papers]]
+title = "A General Framework for Empirical Bayes Estimation in Discrete Linear Exponential Family"
+authors = [ "Trambak Banerjee", "Qiang Liu", "Gourab Mukherjee", "Wengunag Sun",]
+volume = 22
+issue = 67
+page_start = 1
+page_end = 46
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-873.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-873/19-873.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-873.bib"
+
+[[papers]]
+title = "Path Length Bounds for Gradient Descent and Flow"
+authors = [ "Chirag Gupta", "Sivaraman Balakrishnan", "Aaditya Ramdas",]
+volume = 22
+issue = 68
+page_start = 1
+page_end = 63
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-979.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-979/19-979.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-979.bib"
+
+[[papers]]
+title = "Determining the Number of Communities in Degree-corrected Stochastic Block Models"
+authors = [ "Shujie Ma", "Liangjun Su", "Yichong Zhang",]
+volume = 22
+issue = 69
+page_start = 1
+page_end = 63
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-037.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-037/20-037.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-037.bib"
+
+[[papers]]
+title = "Testing Conditional Independence via Quantile Regression Based Partial Copulas"
+authors = [ "Lasse Petersen", "Niels Richard Hansen",]
+volume = 22
+issue = 70
+page_start = 1
+page_end = 47
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1074.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1074/20-1074.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1074.bib"
+
+[[papers]]
+title = "Phase Diagram for Two-layer ReLU Neural Networks at Infinite-width Limit"
+authors = [ "Tao Luo", "Zhi-Qin John Xu", "Zheng Ma", "Yaoyu Zhang",]
+volume = 22
+issue = 71
+page_start = 1
+page_end = 47
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1123.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1123/20-1123.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1123.bib"
+
+[[papers]]
+title = "Prediction against a limited adversary"
+authors = [ "Erhan Bayraktar", "Ibrahim Ekren", "Xin Zhang",]
+volume = 22
+issue = 72
+page_start = 1
+page_end = 33
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1234.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1234/20-1234.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1234.bib"
+
+[[papers]]
+title = "Optimization with Momentum: Dynamical, Control-Theoretic, and Symplectic Perspectives"
+authors = [ "Michael Muehlebach", "Michael I. Jordan",]
+volume = 22
+issue = 73
+page_start = 1
+page_end = 50
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-207.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-207/20-207.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-207.bib"
+
+[[papers]]
+title = "Kernel Operations on the GPU, with Autodiff, without Memory Overflows"
+authors = [ "Benjamin Charlier", "Jean Feydy", "Joan Alexis GlaunÃ¨s", "FranÃ§ois-David Collin", "Ghislain Durif",]
+volume = 22
+issue = 74
+page_start = 1
+page_end = 6
+year = 2021
+is_mloss = true
+url_abs = "https://jmlr.org/papers/v22/20-275.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-275/20-275.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-275.bib"
+
+[[papers]]
+title = "Attention is Turing-Complete"
+authors = [ "Jorge PÃ©rez", "Pablo BarcelÃ³", "Javier Marinkovic",]
+volume = 22
+issue = 75
+page_start = 1
+page_end = 35
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-302.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-302/20-302.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-302.bib"
+
+[[papers]]
+title = "Analyzing the discrepancy principle for kernelized spectral filter learning algorithms"
+authors = [ "Alain Celisse", "Martin Wahl",]
+volume = 22
+issue = 76
+page_start = 1
+page_end = 59
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-358.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-358/20-358.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-358.bib"
+
+[[papers]]
+title = "ChainerRL: A Deep Reinforcement Learning Library"
+authors = [ "Yasuhiro Fujita", "Prabhat Nagarajan", "Toshiki Kataoka", "Takahiro Ishikawa",]
+volume = 22
+issue = 77
+page_start = 1
+page_end = 14
+year = 2021
+is_mloss = true
+url_abs = "https://jmlr.org/papers/v22/20-376.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-376/20-376.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-376.bib"
+
+[[papers]]
+title = "POT: Python Optimal Transport"
+authors = [ "RÃ©mi Flamary", "Nicolas Courty", "Alexandre Gramfort", "Mokhtar Z. Alaya", "AurÃ©lie Boisbunon", "Stanislas Chambon", "Laetitia Chapel", "Adrien Corenflos", "Kilian Fatras", "Nemo Fournier", "LÃ©o Gautheron", "Nathalie T.H. Gayraud", "Hicham Janati", "Alain Rakotomamonjy", "Ievgen Redko", "Antoine Rolet", "Antony Schutz", "Vivien Seguy", "Danica J. Sutherland", "Romain Tavenard", "Alexander Tong", "Titouan Vayer",]
+volume = 22
+issue = 78
+page_start = 1
+page_end = 8
+year = 2021
+is_mloss = true
+url_abs = "https://jmlr.org/papers/v22/20-451.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-451/20-451.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-451.bib"
+
+[[papers]]
+title = "Is SGD a Bayesian sampler? Well, almost"
+authors = [ "Chris Mingard", "Guillermo Valle-PÃ©rez", "Joar Skalse", "Ard A. Louis",]
+volume = 22
+issue = 79
+page_start = 1
+page_end = 64
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-676.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-676/20-676.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-676.bib"
+
+[[papers]]
+title = "Communication-Efficient Distributed Covariance Sketch, with Application to Distributed PCA"
+authors = [ "Zengfeng Huang", "Xuemin Lin", "Wenjie Zhang", "Ying Zhang",]
+volume = 22
+issue = 80
+page_start = 1
+page_end = 38
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-705.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-705/20-705.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-705.bib"
+
+[[papers]]
+title = "Knowing what You Know: valid and validated confidence sets in multiclass and multilabel prediction"
+authors = [ "Maxime Cauchois", "Suyash Gupta", "John C. Duchi",]
+volume = 22
+issue = 81
+page_start = 1
+page_end = 42
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-753.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-753/20-753.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-753.bib"
+
+[[papers]]
+title = "PyKEEN 1.0: A Python Library for Training and Evaluating Knowledge Graph Embeddings"
+authors = [ "Mehdi Ali", "Max Berrendorf", "Charles Tapley Hoyt", "Laurent Vermue", "Sahand Sharifzadeh", "Volker Tresp", "Jens Lehmann",]
+volume = 22
+issue = 82
+page_start = 1
+page_end = 6
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-825.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-825/20-825.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-825.bib"
+
+[[papers]]
+title = "Statistical Query Lower Bounds for Tensor PCA"
+authors = [ "Rishabh Dudeja", "Daniel Hsu",]
+volume = 22
+issue = 83
+page_start = 1
+page_end = 51
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-837.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-837/20-837.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-837.bib"
+
+[[papers]]
+title = "Variance Reduced Median-of-Means Estimator for Byzantine-Robust Distributed Inference"
+authors = [ "Jiyuan Tu", "Weidong Liu", "Xiaojun Mao", "Xi Chen",]
+volume = 22
+issue = 84
+page_start = 1
+page_end = 67
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-950.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-950/20-950.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-950.bib"
+
+[[papers]]
+title = "Gradient Methods Never Overfit On Separable Data"
+authors = [ "Ohad Shamir",]
+volume = 22
+issue = 85
+page_start = 1
+page_end = 20
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-997.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-997/20-997.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-997.bib"
+
+[[papers]]
+title = "Multi-view Learning as a Nonparametric Nonlinear Inter-Battery Factor Analysis"
+authors = [ "Andreas Damianou", "Neil D. Lawrence", "Carl Henrik Ek",]
+volume = 22
+issue = 86
+page_start = 1
+page_end = 51
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/16-179.html"
+url_pdf = "https://jmlr.org/papers/volume22/16-179/16-179.pdf"
+url_bib = "https://jmlr.org/papers/v22/16-179.bib"
+
+[[papers]]
+title = "On Solving Probabilistic Linear Diophantine Equations"
+authors = [ "Patrick Kreitzberg", "Oliver Serang",]
+volume = 22
+issue = 87
+page_start = 1
+page_end = 24
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/17-474.html"
+url_pdf = "https://jmlr.org/papers/volume22/17-474/17-474.pdf"
+url_bib = "https://jmlr.org/papers/v22/17-474.bib"
+
+[[papers]]
+title = "Edge Sampling Using Local Network Information"
+authors = [ "Can M. Le",]
+volume = 22
+issue = 88
+page_start = 1
+page_end = 29
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-240.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-240/18-240.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-240.bib"
+
+[[papers]]
+title = "Bayesian Text Classification and Summarization via A Class-Specified Topic Model"
+authors = [ "Feifei Wang", "Junni L. Zhang", "Yichao Li", "Ke Deng", "Jun S. Liu",]
+volume = 22
+issue = 89
+page_start = 1
+page_end = 48
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-332.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-332/18-332.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-332.bib"
+
+[[papers]]
+title = "Risk Bounds for Unsupervised Cross-Domain Mapping with IPMs"
+authors = [ "Tomer Galanti", "Sagie Benaim", "Lior Wolf",]
+volume = 22
+issue = 90
+page_start = 1
+page_end = 42
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-489.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-489/18-489.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-489.bib"
+
+[[papers]]
+title = "Analysis of high-dimensional Continuous Time Markov Chains using the Local Bouncy Particle Sampler"
+authors = [ "Tingting Zhao", "Alexandre Bouchard-CÃ´tÃ©",]
+volume = 22
+issue = 91
+page_start = 1
+page_end = 41
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-651.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-651/18-651.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-651.bib"
+
+[[papers]]
+title = "NEU: A Meta-Algorithm for Universal UAP-Invariant Feature Representation"
+authors = [ "Anastasis Kratsios", "Cody Hyndman",]
+volume = 22
+issue = 92
+page_start = 1
+page_end = 51
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-803.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-803/18-803.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-803.bib"
+
+[[papers]]
+title = "Flexible Signal Denoising via Flexible Empirical Bayes Shrinkage"
+authors = [ "Zhengrong Xing", "Peter Carbonetto", "Matthew Stephens",]
+volume = 22
+issue = 93
+page_start = 1
+page_end = 28
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-042.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-042/19-042.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-042.bib"
+
+[[papers]]
+title = "Consistent Semi-Supervised Graph Regularization for High Dimensional Data"
+authors = [ "Xiaoyi Mai", "Romain Couillet",]
+volume = 22
+issue = 94
+page_start = 1
+page_end = 48
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-081.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-081/19-081.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-081.bib"
+
+[[papers]]
+title = "Histogram Transform Ensembles for Large-scale Regression"
+authors = [ "Hanyuan Hang", "Zhouchen Lin", "Xiaoyu Liu", "Hongwei Wen",]
+volume = 22
+issue = 95
+page_start = 1
+page_end = 87
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-1004.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-1004/19-1004.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-1004.bib"
+
+[[papers]]
+title = "Guided Visual Exploration of Relations in Data Sets"
+authors = [ "Kai PuolamÃ¤ki", "Emilia Oikarinen", "Andreas Henelius",]
+volume = 22
+issue = 96
+page_start = 1
+page_end = 32
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-364.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-364/19-364.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-364.bib"
+
+[[papers]]
+title = "Safe Policy Iteration: A Monotonically Improving Approximate Policy Iteration Approach"
+authors = [ "Alberto Maria Metelli", "Matteo Pirotta", "Daniele Calandriello", "Marcello Restelli",]
+volume = 22
+issue = 97
+page_start = 1
+page_end = 83
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-707.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-707/19-707.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-707.bib"
+
+[[papers]]
+title = "On the Theory of Policy Gradient Methods: Optimality, Approximation, and Distribution Shift"
+authors = [ "Alekh Agarwal", "Sham M. Kakade", "Jason D. Lee", "Gaurav Mahajan",]
+volume = 22
+issue = 98
+page_start = 1
+page_end = 76
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-736.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-736/19-736.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-736.bib"
+
+[[papers]]
+title = "Adaptive estimation of nonparametric functionals"
+authors = [ "Lin Liu", "Rajarshi Mukherjee", "James M. Robins", "Eric Tchetgen Tchetgen",]
+volume = 22
+issue = 99
+page_start = 1
+page_end = 66
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-892.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-892/19-892.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-892.bib"
+
+[[papers]]
+title = "OpenML-Python: an extensible Python API for OpenML"
+authors = [ "Matthias Feurer", "Jan N. van Rijn", "Arlind Kadra", "Pieter Gijsbers", "Neeratyoy Mallik", "Sahithya Ravi", "Andreas MÃ¼ller", "Joaquin Vanschoren", "Frank Hutter",]
+volume = 22
+issue = 100
+page_start = 1
+page_end = 5
+year = 2021
+is_mloss = true
+url_abs = "https://jmlr.org/papers/v22/19-920.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-920/19-920.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-920.bib"
+
+[[papers]]
+title = "LocalGAN: Modeling Local Distributions for Adversarial Response Generation"
+authors = [ "Baoxun Wang", "Zhen Xu", "Huan Zhang", "Kexin Qiu", "Deyuan Zhang", "Chengjie Sun",]
+volume = 22
+issue = 101
+page_start = 1
+page_end = 29
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-052.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-052/20-052.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-052.bib"
+
+[[papers]]
+title = "Learning a High-dimensional Linear Structural Equation Model via l1-Regularized Regression"
+authors = [ "Gunwoong Park", "Sang Jun Moon", "Sion Park", "Jong-June Jeon",]
+volume = 22
+issue = 102
+page_start = 1
+page_end = 41
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1005.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1005/20-1005.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1005.bib"
+
+[[papers]]
+title = "A Unified Analysis of First-Order Methods for Smooth Games via Integral Quadratic Constraints"
+authors = [ "Guodong Zhang", "Xuchan Bao", "Laurent Lessard", "Roger Grosse",]
+volume = 22
+issue = 103
+page_start = 1
+page_end = 39
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1068.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1068/20-1068.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1068.bib"
+
+[[papers]]
+title = "Explaining Explanations: Axiomatic Feature Interactions for Deep Networks"
+authors = [ "Joseph D. Janizek", "Pascal Sturmfels", "Su-In Lee",]
+volume = 22
+issue = 104
+page_start = 1
+page_end = 54
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1223.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1223/20-1223.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1223.bib"
+
+[[papers]]
+title = "Pathwise Conditioning of Gaussian Processes"
+authors = [ "James T. Wilson", "Viacheslav Borovitskiy", "Alexander Terenin", "Peter Mostowsky", "Marc Peter Deisenroth",]
+volume = 22
+issue = 105
+page_start = 1
+page_end = 47
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1260.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1260/20-1260.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1260.bib"
+
+[[papers]]
+title = "Online stochastic gradient descent on non-convex losses from high-dimensional inference"
+authors = [ "Gerard Ben Arous", "Reza Gheissari", "Aukosh Jagannath",]
+volume = 22
+issue = 106
+page_start = 1
+page_end = 51
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1288.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1288/20-1288.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1288.bib"
+
+[[papers]]
+title = "Beyond English-Centric Multilingual Machine Translation"
+authors = [ "Angela Fan", "Shruti Bhosale", "Holger Schwenk", "Zhiyi Ma", "Ahmed El-Kishky", "Siddharth Goyal", "Mandeep Baines", "Onur Celebi", "Guillaume Wenzek", "Vishrav Chaudhary", "Naman Goyal", "Tom Birch", "Vitaliy Liptchinsky", "Sergey Edunov", "Michael Auli", "Armand Joulin",]
+volume = 22
+issue = 107
+page_start = 1
+page_end = 48
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1307.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1307/20-1307.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1307.bib"
+
+[[papers]]
+title = "Towards a Unified Analysis of Random Fourier Features"
+authors = [ "Zhu Li", "Jean-Francois Ton", "Dino Oglic", "Dino Sejdinovic",]
+volume = 22
+issue = 108
+page_start = 1
+page_end = 51
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1369.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1369/20-1369.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1369.bib"
+
+[[papers]]
+title = "mvlearn: Multiview Machine Learning in Python"
+authors = [ "Ronan Perry", "Gavin Mischler", "Richard Guo", "Theodore Lee", "Alexander Chang", "Arman Koul", "Cameron Franz", "Hugo Richard", "Iain Carmichael", "Pierre Ablin", "Alexandre Gramfort", "Joshua T. Vogelstein",]
+volume = 22
+issue = 109
+page_start = 1
+page_end = 7
+year = 2021
+is_mloss = true
+url_abs = "https://jmlr.org/papers/v22/20-1370.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1370/20-1370.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1370.bib"
+
+[[papers]]
+title = "River: machine learning for streaming data in Python"
+authors = [ "Jacob Montiel", "Max Halford", "Saulo Martiello Mastelini", "Geoffrey Bolmier", "Raphael Sourty", "Robin Vaysse", "Adil Zouitine", "Heitor Murilo Gomes", "Jesse Read", "Talel Abdessalem", "Albert Bifet",]
+volume = 22
+issue = 110
+page_start = 1
+page_end = 8
+year = 2021
+is_mloss = true
+url_abs = "https://jmlr.org/papers/v22/20-1380.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1380/20-1380.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1380.bib"
+
+[[papers]]
+title = "Non-parametric Quantile Regression via the K-NN Fused Lasso"
+authors = [ "Steven Siwei Ye", "Oscar Hernan Madrid Padilla",]
+volume = 22
+issue = 111
+page_start = 1
+page_end = 38
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1462.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1462/20-1462.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1462.bib"
+
+[[papers]]
+title = "L-SVRG and L-Katyusha with Arbitrary Sampling"
+authors = [ "Xun Qian", "Zheng Qu", "Peter RichtÃ¡rik",]
+volume = 22
+issue = 112
+page_start = 1
+page_end = 47
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-156.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-156/20-156.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-156.bib"
+
+[[papers]]
+title = "A Lyapunov Analysis of Accelerated Methods in Optimization"
+authors = [ "Ashia C. Wilson", "Ben Recht", "Michael I. Jordan",]
+volume = 22
+issue = 113
+page_start = 1
+page_end = 34
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-195.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-195/20-195.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-195.bib"
+
+[[papers]]
+title = "NUQSGD: Provably Communication-efficient Data-parallel SGD via Nonuniform Quantization"
+authors = [ "Ali Ramezani-Kebrya", "Fartash Faghri", "Ilya Markov", "Vitalii Aksenov", "Dan Alistarh", "Daniel M. Roy",]
+volume = 22
+issue = 114
+page_start = 1
+page_end = 43
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-255.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-255/20-255.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-255.bib"
+
+[[papers]]
+title = "Stochastic Proximal Methods for Non-Smooth Non-Convex Constrained Sparse Optimization"
+authors = [ "Michael R. Metel", "Akiko Takeda",]
+volume = 22
+issue = 115
+page_start = 1
+page_end = 36
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-287.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-287/20-287.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-287.bib"
+
+[[papers]]
+title = "An Importance Weighted Feature Selection Stability Measure"
+authors = [ "Victor Hamer", "Pierre Dupont",]
+volume = 22
+issue = 116
+page_start = 1
+page_end = 57
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-366.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-366/20-366.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-366.bib"
+
+[[papers]]
+title = "Strong Consistency, Graph Laplacians, and the Stochastic Block Model"
+authors = [ "Shaofeng Deng", "Shuyang Ling", "Thomas Strohmer",]
+volume = 22
+issue = 117
+page_start = 1
+page_end = 44
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-391.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-391/20-391.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-391.bib"
+
+[[papers]]
+title = "A General Framework for Adversarial Label Learning"
+authors = [ "Chidubem Arachie", "Bert Huang",]
+volume = 22
+issue = 118
+page_start = 1
+page_end = 33
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-537.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-537/20-537.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-537.bib"
+
+[[papers]]
+title = "Some Theoretical Insights into Wasserstein GANs"
+authors = [ "GÃ©rard Biau", "Maxime Sangnier", "Ugo Tanielian",]
+volume = 22
+issue = 119
+page_start = 1
+page_end = 45
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-553.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-553/20-553.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-553.bib"
+
+[[papers]]
+title = "Empirical Bayes Matrix Factorization"
+authors = [ "Wei Wang", "Matthew Stephens",]
+volume = 22
+issue = 120
+page_start = 1
+page_end = 40
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-589.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-589/20-589.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-589.bib"
+
+[[papers]]
+title = "Langevin Dynamics for Adaptive Inverse Reinforcement Learning of Stochastic Gradient Algorithms"
+authors = [ "Vikram Krishnamurthy", "George Yin",]
+volume = 22
+issue = 121
+page_start = 1
+page_end = 49
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-625.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-625/20-625.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-625.bib"
+
+[[papers]]
+title = "Sparse Convex Optimization via Adaptively Regularized Hard Thresholding"
+authors = [ "Kyriakos Axiotis", "Maxim Sviridenko",]
+volume = 22
+issue = 122
+page_start = 1
+page_end = 47
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-661.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-661/20-661.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-661.bib"
+
+[[papers]]
+title = "Convergence Guarantees for Gaussian Process Means With  Misspecified Likelihoods and Smoothness"
+authors = [ "George Wynne", "FranÃ§ois-Xavier Briol", "Mark Girolami",]
+volume = 22
+issue = 123
+page_start = 1
+page_end = 40
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-662.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-662/20-662.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-662.bib"
+
+[[papers]]
+title = "A flexible model-free prediction-based framework for feature ranking"
+authors = [ "Jingyi Jessica Li", "Yiling Elaine Chen", "Xin Tong",]
+volume = 22
+issue = 124
+page_start = 1
+page_end = 54
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-673.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-673/20-673.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-673.bib"
+
+[[papers]]
+title = "Bandit Convex Optimization in Non-stationary Environments"
+authors = [ "Peng Zhao", "Guanghui Wang", "Lijun Zhang", "Zhi-Hua Zhou",]
+volume = 22
+issue = 125
+page_start = 1
+page_end = 45
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-763.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-763/20-763.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-763.bib"
+
+[[papers]]
+title = "Integrative High Dimensional Multiple Testing with Heterogeneity under Data Sharing Constraints"
+authors = [ "Molei Liu", "Yin Xia", "Kelly Cho", "Tianxi Cai",]
+volume = 22
+issue = 126
+page_start = 1
+page_end = 26
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-774.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-774/20-774.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-774.bib"
+
+[[papers]]
+title = "LassoNet: A Neural Network with Feature Sparsity"
+authors = [ "Ismael Lemhadri", "Feng Ruan", "Louis Abraham", "Robert Tibshirani",]
+volume = 22
+issue = 127
+page_start = 1
+page_end = 29
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-848.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-848/20-848.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-848.bib"
+
+[[papers]]
+title = "Optimal Bounds between f-Divergences and Integral Probability Metrics"
+authors = [ "Rohit Agrawal", "Thibaut Horel",]
+volume = 22
+issue = 128
+page_start = 1
+page_end = 59
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-867.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-867/20-867.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-867.bib"
+
+[[papers]]
+title = "Finite-sample Analysis of Interpolating Linear Classifiers in the Overparameterized Regime"
+authors = [ "Niladri S. Chatterji", "Philip M. Long",]
+volume = 22
+issue = 129
+page_start = 1
+page_end = 30
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-974.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-974/20-974.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-974.bib"
+
+[[papers]]
+title = "Learning Whenever Learning is Possible: Universal Learning under General Stochastic Processes"
+authors = [ "Steve Hanneke",]
+volume = 22
+issue = 130
+page_start = 1
+page_end = 116
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/17-298.html"
+url_pdf = "https://jmlr.org/papers/volume22/17-298/17-298.pdf"
+url_bib = "https://jmlr.org/papers/v22/17-298.bib"
+
+[[papers]]
+title = "MushroomRL: Simplifying Reinforcement Learning Research"
+authors = [ "Carlo D'Eramo", "Davide Tateo", "Andrea Bonarini", "Marcello Restelli", "Jan Peters",]
+volume = 22
+issue = 131
+page_start = 1
+page_end = 5
+year = 2021
+is_mloss = true
+url_abs = "https://jmlr.org/papers/v22/18-056.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-056/18-056.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-056.bib"
+
+[[papers]]
+title = "Locally Differentially-Private Randomized Response for Discrete Distribution Learning"
+authors = [ "Adriano Pastore", "Michael Gastpar",]
+volume = 22
+issue = 132
+page_start = 1
+page_end = 56
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-726.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-726/18-726.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-726.bib"
+
+[[papers]]
+title = "A Contextual Bandit Bake-off"
+authors = [ "Alberto Bietti", "Alekh Agarwal", "John Langford",]
+volume = 22
+issue = 133
+page_start = 1
+page_end = 49
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-863.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-863/18-863.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-863.bib"
+
+[[papers]]
+title = "An Inertial Newton Algorithm for Deep Learning"
+authors = [ "Camille Castera", "JÃ©rÃ´me Bolte", "CÃ©dric FÃ©votte", "Edouard Pauwels",]
+volume = 22
+issue = 134
+page_start = 1
+page_end = 31
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-1024.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-1024/19-1024.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-1024.bib"
+
+[[papers]]
+title = "Learning Sparse Classifiers: Continuous and Mixed Integer Optimization Perspectives"
+authors = [ "Antoine Dedieu", "Hussein Hazimeh", "Rahul Mazumder",]
+volume = 22
+issue = 135
+page_start = 1
+page_end = 47
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-1049.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-1049/19-1049.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-1049.bib"
+
+[[papers]]
+title = "Implicit Langevin Algorithms for Sampling From Log-concave Densities"
+authors = [ "Liam Hodgkinson", "Robert Salomone", "Fred Roosta",]
+volume = 22
+issue = 136
+page_start = 1
+page_end = 30
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-292.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-292/19-292.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-292.bib"
+
+[[papers]]
+title = "Hybrid Predictive Models: When an Interpretable Model Collaborates with a Black-box Model"
+authors = [ "Tong Wang", "Qihang Lin",]
+volume = 22
+issue = 137
+page_start = 1
+page_end = 38
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-325.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-325/19-325.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-325.bib"
+
+[[papers]]
+title = "An algorithmic view of L2 regularization and some path-following algorithms"
+authors = [ "Yunzhang Zhu", "Renxiong Liu",]
+volume = 22
+issue = 138
+page_start = 1
+page_end = 62
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-477.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-477/19-477.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-477.bib"
+
+[[papers]]
+title = "Hoeffding's Inequality for General Markov Chains and Its Applications to Statistical Learning"
+authors = [ "Jianqing Fan", "Bai Jiang", "Qiang Sun",]
+volume = 22
+issue = 139
+page_start = 1
+page_end = 35
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-479.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-479/19-479.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-479.bib"
+
+[[papers]]
+title = "Generalization Properties of hyper-RKHS and its Applications"
+authors = [ "Fanghui Liu", "Lei Shi", "Xiaolin Huang", "Jie Yang", "Johan A.K. Suykens",]
+volume = 22
+issue = 140
+page_start = 1
+page_end = 38
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-482.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-482/19-482.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-482.bib"
+
+[[papers]]
+title = "Pseudo-Marginal Hamiltonian Monte Carlo"
+authors = [ "Johan AlenlÃ¶v", "Arnoud Doucet", "Fredrik Lindsten",]
+volume = 22
+issue = 141
+page_start = 1
+page_end = 45
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-486.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-486/19-486.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-486.bib"
+
+[[papers]]
+title = "Inference for Multiple Heterogeneous Networks with a Common Invariant Subspace"
+authors = [ "JesÃºs Arroyo", "Avanti Athreya", "Joshua Cape", "Guodong Chen", "Carey E. Priebe", "Joshua T. Vogelstein",]
+volume = 22
+issue = 142
+page_start = 1
+page_end = 49
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-558.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-558/19-558.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-558.bib"
+
+[[papers]]
+title = "Non-attracting Regions of Local Minima in Deep and Wide Neural Networks"
+authors = [ "Henning Petzka", "Cristian Sminchisescu",]
+volume = 22
+issue = 143
+page_start = 1
+page_end = 34
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-586.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-586/19-586.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-586.bib"
+
+[[papers]]
+title = "Individual Fairness in Hindsight"
+authors = [ "Swati Gupta", "Vijay Kamble",]
+volume = 22
+issue = 144
+page_start = 1
+page_end = 35
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-658.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-658/19-658.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-658.bib"
+
+[[papers]]
+title = "On efficient multilevel Clustering via Wasserstein distances"
+authors = [ "Viet Huynh", "Nhat Ho", "Nhan Dam", "XuanLong Nguyen", "Mikhail Yurochkin", "Hung Bui", "Dinh Phung",]
+volume = 22
+issue = 145
+page_start = 1
+page_end = 43
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-782.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-782/19-782.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-782.bib"
+
+[[papers]]
+title = "Nonparametric Modeling of Higher-Order Interactions via Hypergraphons"
+authors = [ "Krishnakumar Balasubramanian",]
+volume = 22
+issue = 146
+page_start = 1
+page_end = 35
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-941.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-941/19-941.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-941.bib"
+
+[[papers]]
+title = "Optimal Minimax Variable Selection for Large-Scale Matrix Linear Regression Model"
+authors = [ "Meiling Hao", "Lianqiang Qu", "Dehan Kong", "Liuquan Sun", "Hongtu Zhu",]
+volume = 22
+issue = 147
+page_start = 1
+page_end = 39
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-969.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-969/19-969.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-969.bib"
+
+[[papers]]
+title = "Statistical guarantees for local graph clustering"
+authors = [ "Wooseok Ha", "Kimon Fountoulakis", "Michael W. Mahoney",]
+volume = 22
+issue = 148
+page_start = 1
+page_end = 54
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-029.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-029/20-029.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-029.bib"
+
+[[papers]]
+title = "Hyperparameter Optimization via Sequential Uniform Designs"
+authors = [ "Zebin Yang", "Aijun Zhang",]
+volume = 22
+issue = 149
+page_start = 1
+page_end = 47
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-058.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-058/20-058.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-058.bib"
+
+[[papers]]
+title = "Accelerating Ill-Conditioned Low-Rank Matrix Estimation via Scaled Gradient Descent"
+authors = [ "Tian Tong", "Cong Ma", "Yuejie Chi",]
+volume = 22
+issue = 150
+page_start = 1
+page_end = 63
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1067.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1067/20-1067.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1067.bib"
+
+[[papers]]
+title = "Universal consistency and rates of convergence of multiclass prototype algorithms in metric spaces"
+authors = [ "LÃ¡szlÃ³ GyÃ¶rfi", "Roi Weiss",]
+volume = 22
+issue = 151
+page_start = 1
+page_end = 25
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1081.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1081/20-1081.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1081.bib"
+
+[[papers]]
+title = "Hardness of Identity Testing for Restricted Boltzmann Machines and Potts models"
+authors = [ "Antonio Blanca", "Zongchen Chen", "Daniel Åxa0tefankoviÄx8d", "Eric Vigoda",]
+volume = 22
+issue = 152
+page_start = 1
+page_end = 56
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1162.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1162/20-1162.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1162.bib"
+
+[[papers]]
+title = "Factorization Machines with Regularization for Sparse Feature Interactions"
+authors = [ "Kyohei Atarashi", "Satoshi Oyama", "Masahito Kurihara",]
+volume = 22
+issue = 153
+page_start = 1
+page_end = 50
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1170.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1170/20-1170.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1170.bib"
+
+[[papers]]
+title = "Kernel Smoothing, Mean Shift, and Their Learning Theory with Directional Data"
+authors = [ "Yikun Zhang", "Yen-Chi Chen",]
+volume = 22
+issue = 154
+page_start = 1
+page_end = 92
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1194.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1194/20-1194.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1194.bib"
+
+[[papers]]
+title = "What Causes the Test Error? Going Beyond Bias-Variance via ANOVA"
+authors = [ "Licong Lin", "Edgar Dobriban",]
+volume = 22
+issue = 155
+page_start = 1
+page_end = 82
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1211.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1211/20-1211.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1211.bib"
+
+[[papers]]
+title = "A Greedy Algorithm for Quantizing Neural Networks"
+authors = [ "Eric Lybrand", "Rayan Saab",]
+volume = 22
+issue = 156
+page_start = 1
+page_end = 38
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1233.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1233/20-1233.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1233.bib"
+
+[[papers]]
+title = "The Ridgelet Prior: A Covariance Function Approach to Prior Specification for Bayesian Neural Networks"
+authors = [ "Takuo Matsubara", "Chris J. Oates", "FranÃ§ois-Xavier Briol",]
+volume = 22
+issue = 157
+page_start = 1
+page_end = 57
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1300.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1300/20-1300.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1300.bib"
+
+[[papers]]
+title = "Information criteria for non-normalized models"
+authors = [ "Takeru Matsuda", "Masatoshi Uehara", "Aapo Hyvarinen",]
+volume = 22
+issue = 158
+page_start = 1
+page_end = 33
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1366.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1366/20-1366.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1366.bib"
+
+[[papers]]
+title = "When Does Gradient Descent with Logistic Loss Find Interpolating Two-Layer Networks?"
+authors = [ "Niladri S. Chatterji", "Philip M. Long", "Peter L. Bartlett",]
+volume = 22
+issue = 159
+page_start = 1
+page_end = 48
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1372.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1372/20-1372.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1372.bib"
+
+[[papers]]
+title = "Are We Forgetting about Compositional Optimisers in Bayesian Optimisation?"
+authors = [ "Antoine Grosnit", "Alexander I. Cowen-Rivers", "Rasul Tutunov", "Ryan-Rhys Griffiths", "Jun Wang", "Haitham Bou-Ammar",]
+volume = 22
+issue = 160
+page_start = 1
+page_end = 78
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1422.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1422/20-1422.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1422.bib"
+
+[[papers]]
+title = "MetaGrad: Adaptation using Multiple Learning Rates in Online Learning"
+authors = [ "Tim van Erven", "Wouter M. Koolen", "Dirk van der Hoeven",]
+volume = 22
+issue = 161
+page_start = 1
+page_end = 61
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1444.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1444/20-1444.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1444.bib"
+
+[[papers]]
+title = "Counterfactual Mean Embeddings"
+authors = [ "Krikamol Muandet", "Motonobu Kanagawa", "Sorawit Saengkyongam", "Sanparith Marukatat",]
+volume = 22
+issue = 162
+page_start = 1
+page_end = 71
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-185.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-185/20-185.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-185.bib"
+
+[[papers]]
+title = "PeerReview4All: Fair and Accurate Reviewer Assignment in Peer Review"
+authors = [ "Ivan Stelmakh", "Nihar Shah", "Aarti Singh",]
+volume = 22
+issue = 163
+page_start = 1
+page_end = 66
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-190.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-190/20-190.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-190.bib"
+
+[[papers]]
+title = "Improving Reproducibility in Machine Learning Research(A Report from the NeurIPS 2019 Reproducibility Program)"
+authors = [ "Joelle Pineau", "Philippe Vincent-Lamarre", "Koustuv Sinha", "Vincent Lariviere", "Alina Beygelzimer", "Florence d'Alche-Buc", "Emily Fox", "Hugo Larochelle",]
+volume = 22
+issue = 164
+page_start = 1
+page_end = 20
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-303.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-303/20-303.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-303.bib"
+
+[[papers]]
+title = "Implicit Self-Regularization in Deep Neural Networks: Evidence from Random Matrix Theory and Implications for Learning"
+authors = [ "Charles H. Martin", "Michael W. Mahoney",]
+volume = 22
+issue = 165
+page_start = 1
+page_end = 73
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-410.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-410/20-410.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-410.bib"
+
+[[papers]]
+title = "The ensmallen library for flexible numerical optimization"
+authors = [ "Ryan R. Curtin", "Marcus Edel", "Rahul Ganesh Prabhu", "Suryoday Basak", "Zhihao Lou", "Conrad Sanderson",]
+volume = 22
+issue = 166
+page_start = 1
+page_end = 6
+year = 2021
+is_mloss = true
+url_abs = "https://jmlr.org/papers/v22/20-416.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-416/20-416.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-416.bib"
+
+[[papers]]
+title = "Estimation and Optimization of Composite Outcomes"
+authors = [ "Daniel J. Luckett", "Eric B. Laber", "Siyeon Kim", "Michael R. Kosorok",]
+volume = 22
+issue = 167
+page_start = 1
+page_end = 40
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-429.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-429/20-429.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-429.bib"
+
+[[papers]]
+title = "Asymptotic Normality, Concentration, and Coverage of Generalized Posteriors"
+authors = [ "Jeffrey W. Miller",]
+volume = 22
+issue = 168
+page_start = 1
+page_end = 53
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-469.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-469/20-469.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-469.bib"
+
+[[papers]]
+title = "First-order Convergence Theory for Weakly-Convex-Weakly-Concave Min-max Problems"
+authors = [ "Mingrui Liu", "Hassan Rafique", "Qihang Lin", "Tianbao Yang",]
+volume = 22
+issue = 169
+page_start = 1
+page_end = 34
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-533.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-533/20-533.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-533.bib"
+
+[[papers]]
+title = "Black-Box Reductions for Zeroth-Order Gradient  Algorithms  to Achieve Lower  Query Complexity"
+authors = [ "Bin Gu", "Xiyuan Wei", "Shangqian Gao", "Ziran Xiong", "Cheng Deng", "Heng Huang",]
+volume = 22
+issue = 170
+page_start = 1
+page_end = 47
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-611.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-611/20-611.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-611.bib"
+
+[[papers]]
+title = "Optimal Rates of Distributed Regression with Imperfect Kernels"
+authors = [ "Hongwei Sun", "Qiang Wu",]
+volume = 22
+issue = 171
+page_start = 1
+page_end = 34
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-627.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-627/20-627.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-627.bib"
+
+[[papers]]
+title = "Unlinked Monotone Regression"
+authors = [ "Fadoua Balabdaoui", "Charles R. Doss", "CÃ©cile Durot",]
+volume = 22
+issue = 172
+page_start = 1
+page_end = 60
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-689.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-689/20-689.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-689.bib"
+
+[[papers]]
+title = "Replica Exchange for Non-Convex Optimization"
+authors = [ "Jing Dong", "Xin T. Tong",]
+volume = 22
+issue = 173
+page_start = 1
+page_end = 59
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-697.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-697/20-697.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-697.bib"
+
+[[papers]]
+title = "Achieving Fairness in the Stochastic Multi-Armed Bandit Problem"
+authors = [ "Vishakha Patil", "Ganesh Ghalme", "Vineet Nair", "Y. Narahari",]
+volume = 22
+issue = 174
+page_start = 1
+page_end = 31
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-704.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-704/20-704.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-704.bib"
+
+[[papers]]
+title = "Doubly infinite residual neural networks: a diffusion process approach"
+authors = [ "Stefano Peluchetti", "Stefano Favaro",]
+volume = 22
+issue = 175
+page_start = 1
+page_end = 48
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-706.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-706/20-706.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-706.bib"
+
+[[papers]]
+title = "Locally Private k-Means Clustering"
+authors = [ "Uri Stemmer",]
+volume = 22
+issue = 176
+page_start = 1
+page_end = 30
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-721.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-721/20-721.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-721.bib"
+
+[[papers]]
+title = "Prediction Under Latent Factor Regression: Adaptive PCR, Interpolating Predictors and Beyond"
+authors = [ "Xin Bing", "Florentina Bunea", "Seth Strimas-Mackey", "Marten Wegkamp",]
+volume = 22
+issue = 177
+page_start = 1
+page_end = 50
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-768.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-768/20-768.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-768.bib"
+
+[[papers]]
+title = "Conditional independences and causal relations implied by sets of equations"
+authors = [ "Tineke Blom", "Mirthe M. van Diepen", "Joris M. Mooij",]
+volume = 22
+issue = 178
+page_start = 1
+page_end = 62
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-863.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-863/20-863.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-863.bib"
+
+[[papers]]
+title = "A Sharp Blockwise Tensor Perturbation Bound for Orthogonal Iteration"
+authors = [ "Yuetian Luo", "Garvesh Raskutti", "Ming Yuan", "Anru R. Zhang",]
+volume = 22
+issue = 179
+page_start = 1
+page_end = 48
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-919.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-919/20-919.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-919.bib"
+
+[[papers]]
+title = "Improved Shrinkage Prediction under a Spiked Covariance Structure"
+authors = [ "Trambak Banerjee", "Gourab Mukherjee", "Debashis Paul",]
+volume = 22
+issue = 180
+page_start = 1
+page_end = 40
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0006.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0006/21-0006.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0006.bib"
+
+[[papers]]
+title = "Alibi Explain: Algorithms for Explaining Machine Learning Models"
+authors = [ "Janis Klaise", "Arnaud Van Looveren", "Giovanni Vacanti", "Alexandru Coca",]
+volume = 22
+issue = 181
+page_start = 1
+page_end = 7
+year = 2021
+is_mloss = true
+url_abs = "https://jmlr.org/papers/v22/21-0017.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0017/21-0017.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0017.bib"
+
+[[papers]]
+title = "A Probabilistic Interpretation of Self-Paced Learning with Applications to Reinforcement Learning"
+authors = [ "Pascal Klink", "Hany Abdulsamad", "Boris Belousov", "Carlo D'Eramo", "Jan Peters", "Joni Pajarinen",]
+volume = 22
+issue = 182
+page_start = 1
+page_end = 52
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0112.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0112/21-0112.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0112.bib"
+
+[[papers]]
+title = "Benchmarking Unsupervised Object Representations for Video Sequences"
+authors = [ "Marissa A. Weis", "Kashyap Chitta", "Yash Sharma", "Wieland Brendel", "Matthias Bethge", "Andreas Geiger", "Alexander S. Ecker",]
+volume = 22
+issue = 183
+page_start = 1
+page_end = 61
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0199.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0199/21-0199.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0199.bib"
+
+[[papers]]
+title = "mlr3pipelines - Flexible Machine Learning Pipelines in R"
+authors = [ "Martin Binder", "Florian Pfisterer", "Michel Lang", "Lennart Schneider", "Lars Kotthoff", "Bernd Bischl",]
+volume = 22
+issue = 184
+page_start = 1
+page_end = 7
+year = 2021
+is_mloss = true
+url_abs = "https://jmlr.org/papers/v22/21-0281.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0281/21-0281.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0281.bib"
+
+[[papers]]
+title = "Mode-wise Tensor Decompositions: Multi-dimensional Generalizations of CUR Decompositions"
+authors = [ "HanQin Cai", "Keaton Hamm", "Longxiu Huang", "Deanna Needell",]
+volume = 22
+issue = 185
+page_start = 1
+page_end = 36
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0287.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0287/21-0287.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0287.bib"
+
+[[papers]]
+title = "As You Like It: Localization via Paired Comparisons"
+authors = [ "Andrew K. Massimino", "Mark A. Davenport",]
+volume = 22
+issue = 186
+page_start = 1
+page_end = 39
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-105.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-105/18-105.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-105.bib"
+
+[[papers]]
+title = "Matrix Product States for Inference in Discrete Probabilistic Models"
+authors = [ "Rasmus Bonnevie", "Mikkel N. Schmidt",]
+volume = 22
+issue = 187
+page_start = 1
+page_end = 48
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-431.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-431/18-431.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-431.bib"
+
+[[papers]]
+title = "Differentially Private Regression and Classification with Sparse Gaussian Processes"
+authors = [ "Michael Thomas Smith", "Mauricio A. Alvarez", "Neil D. Lawrence",]
+volume = 22
+issue = 188
+page_start = 1
+page_end = 41
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-017.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-017/19-017.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-017.bib"
+
+[[papers]]
+title = "One-Shot Federated Learning: Theoretical Limits and Algorithms to Achieve Them"
+authors = [ "Saber Salehkaleybar", "Arsalan Sharifnassab", "S. Jamaloddin Golestani",]
+volume = 22
+issue = 189
+page_start = 1
+page_end = 47
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-1048.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-1048/19-1048.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-1048.bib"
+
+[[papers]]
+title = "Collusion Detection and Ground Truth Inference in Crowdsourcing for Labeling Tasks"
+authors = [ "Changyue Song", "Kaibo Liu", "Xi Zhang",]
+volume = 22
+issue = 190
+page_start = 1
+page_end = 45
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-373.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-373/19-373.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-373.bib"
+
+[[papers]]
+title = "On the Estimation of Network Complexity: Dimension of Graphons"
+authors = [ "Yann Issartel",]
+volume = 22
+issue = 191
+page_start = 1
+page_end = 62
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-747.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-747/19-747.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-747.bib"
+
+[[papers]]
+title = "Method of Contraction-Expansion (MOCE) for Simultaneous Inference in Linear Models"
+authors = [ "Fei Wang", "Ling Zhou", "Lu Tang", "Peter X.K. Song",]
+volume = 22
+issue = 192
+page_start = 1
+page_end = 32
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-776.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-776/19-776.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-776.bib"
+
+[[papers]]
+title = "Sparse Popularity Adjusted Stochastic Block Model"
+authors = [ "Majid Noroozi", "Marianna Pensky", "Ramchandra Rimal",]
+volume = 22
+issue = 193
+page_start = 1
+page_end = 36
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-835.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-835/19-835.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-835.bib"
+
+[[papers]]
+title = "Limit theorems for out-of-sample extensions of the adjacency and Laplacian spectral embeddings"
+authors = [ "Keith D. Levin", "Fred Roosta", "Minh Tang", "Michael W. Mahoney", "Carey E. Priebe",]
+volume = 22
+issue = 194
+page_start = 1
+page_end = 59
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-852.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-852/19-852.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-852.bib"
+
+[[papers]]
+title = "Learning Laplacian Matrix from Graph Signals with Sparse Spectral Representation"
+authors = [ "Pierre Humbert", "Batiste Le Bars", "Laurent Oudre", "Argyris Kalogeratos", "Nicolas Vayatis",]
+volume = 22
+issue = 195
+page_start = 1
+page_end = 47
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-944.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-944/19-944.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-944.bib"
+
+[[papers]]
+title = "COKE: Communication-Censored Decentralized Kernel Learning"
+authors = [ "Ping Xu", "Yue Wang", "Xiang Chen", "Zhi Tian",]
+volume = 22
+issue = 196
+page_start = 1
+page_end = 35
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-070.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-070/20-070.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-070.bib"
+
+[[papers]]
+title = "Particle-Gibbs Sampling for Bayesian Feature Allocation Models"
+authors = [ "Alexandre Bouchard-CÃ´tÃ©", "Andrew Roth",]
+volume = 22
+issue = 197
+page_start = 1
+page_end = 105
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-082.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-082/20-082.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-082.bib"
+
+[[papers]]
+title = "Integrated Principal Components Analysis"
+authors = [ "Tiffany M. Tang", "Genevera I. Allen",]
+volume = 22
+issue = 198
+page_start = 1
+page_end = 71
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-084.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-084/20-084.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-084.bib"
+
+[[papers]]
+title = "On ADMM in Deep Learning: Convergence and Saturation-Avoidance"
+authors = [ "Jinshan Zeng", "Shao-Bo Lin", "Yuan Yao", "Ding-Xuan Zhou",]
+volume = 22
+issue = 199
+page_start = 1
+page_end = 67
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1006.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1006/20-1006.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1006.bib"
+
+[[papers]]
+title = "Refined approachability algorithms and application to regret minimization with global costs"
+authors = [ "Joon Kwon",]
+volume = 22
+issue = 200
+page_start = 1
+page_end = 38
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1019.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1019/20-1019.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1019.bib"
+
+[[papers]]
+title = "Understanding How Dimension Reduction Tools Work: An Empirical Approach to Deciphering t-SNE, UMAP, TriMap, and PaCMAP for Data Visualization"
+authors = [ "Yingfan Wang", "Haiyang Huang", "Cynthia Rudin", "Yaron Shaposhnik",]
+volume = 22
+issue = 201
+page_start = 1
+page_end = 73
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1061.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1061/20-1061.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1061.bib"
+
+[[papers]]
+title = "Interpretable Deep Generative Recommendation Models"
+authors = [ "Huafeng Liu", "Liping Jing", "Jingxuan Wen", "Pengyu Xu", "Jiaqi Wang", "Jian Yu", "Michael K. Ng",]
+volume = 22
+issue = 202
+page_start = 1
+page_end = 54
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1098.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1098/20-1098.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1098.bib"
+
+[[papers]]
+title = "Learning partial correlation graphs and graphical models by covariance queries"
+authors = [ "GÃ¡bor Lugosi", "Jakub Truszkowski", "Vasiliki Velona", "Piotr Zwiernik",]
+volume = 22
+issue = 203
+page_start = 1
+page_end = 41
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1137.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1137/20-1137.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1137.bib"
+
+[[papers]]
+title = "Failures of Model-dependent Generalization Bounds for Least-norm Interpolation"
+authors = [ "Peter L. Bartlett", "Philip M. Long",]
+volume = 22
+issue = 204
+page_start = 1
+page_end = 15
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1164.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1164/20-1164.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1164.bib"
+
+[[papers]]
+title = "Langevin Monte Carlo: random coordinate descent and variance reduction"
+authors = [ "Zhiyan Ding", "Qin Li",]
+volume = 22
+issue = 205
+page_start = 1
+page_end = 51
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1205.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1205/20-1205.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1205.bib"
+
+[[papers]]
+title = "Hamilton-Jacobi Deep Q-Learning for Deterministic Continuous-Time Systems with Lipschitz Continuous Controls"
+authors = [ "Jeongho Kim", "Jaeuk Shin", "Insoon Yang",]
+volume = 22
+issue = 206
+page_start = 1
+page_end = 34
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1235.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1235/20-1235.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1235.bib"
+
+[[papers]]
+title = "A Unified Convergence Analysis for Shuffling-Type Gradient Methods"
+authors = [ "Lam M. Nguyen", "Quoc Tran-Dinh", "Dzung T. Phan", "Phuong Ha Nguyen", "Marten van Dijk",]
+volume = 22
+issue = 207
+page_start = 1
+page_end = 44
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1238.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1238/20-1238.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1238.bib"
+
+[[papers]]
+title = "Oblivious Data for Fairness with Kernels"
+authors = [ "Steffen GrÃ¼newÃ¤lder", "Azadeh Khaleghi",]
+volume = 22
+issue = 208
+page_start = 1
+page_end = 36
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1311.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1311/20-1311.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1311.bib"
+
+[[papers]]
+title = "Explaining by Removing: A Unified Framework for Model Explanation"
+authors = [ "Ian Covert", "Scott Lundberg", "Su-In Lee",]
+volume = 22
+issue = 209
+page_start = 1
+page_end = 90
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1316.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1316/20-1316.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1316.bib"
+
+[[papers]]
+title = "Policy Teaching in Reinforcement Learning via Environment Poisoning Attacks"
+authors = [ "Amin Rakhsha", "Goran Radanovic", "Rati Devidze", "Xiaojin Zhu", "Adish Singla",]
+volume = 22
+issue = 210
+page_start = 1
+page_end = 45
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1329.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1329/20-1329.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1329.bib"
+
+[[papers]]
+title = "Bandit Learning in Decentralized Matching Markets"
+authors = [ "Lydia T. Liu", "Feng Ruan", "Horia Mania", "Michael I. Jordan",]
+volume = 22
+issue = 211
+page_start = 1
+page_end = 34
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1429.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1429/20-1429.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1429.bib"
+
+[[papers]]
+title = "Convex Geometry and Duality of Over-parameterized Neural Networks"
+authors = [ "Tolga Ergen", "Mert Pilanci",]
+volume = 22
+issue = 212
+page_start = 1
+page_end = 63
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1447.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1447/20-1447.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1447.bib"
+
+[[papers]]
+title = "Cooperative SGD: A Unified Framework for the Design and Analysis of Local-Update SGD Algorithms"
+authors = [ "Jianyu Wang", "Gauri Joshi",]
+volume = 22
+issue = 213
+page_start = 1
+page_end = 50
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-147.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-147/20-147.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-147.bib"
+
+[[papers]]
+title = "dalex: Responsible Machine Learning with Interactive Explainability and Fairness in Python"
+authors = [ "Hubert Baniecki", "Wojciech Kretowicz", "Piotr PiÄx85tyszek", "Jakub WiÅx9bniewski", "PrzemysÅx82aw Biecek",]
+volume = 22
+issue = 214
+page_start = 1
+page_end = 7
+year = 2021
+is_mloss = true
+url_abs = "https://jmlr.org/papers/v22/20-1473.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1473/20-1473.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1473.bib"
+
+[[papers]]
+title = "TensorHive: Management of Exclusive GPU Access for Distributed Machine Learning Workloads"
+authors = [ "PaweÅx82 RoÅx9bciszewski", "MichaÅx82 Martyniak", "Filip Schodowski",]
+volume = 22
+issue = 215
+page_start = 1
+page_end = 5
+year = 2021
+is_mloss = true
+url_abs = "https://jmlr.org/papers/v22/20-225.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-225/20-225.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-225.bib"
+
+[[papers]]
+title = "Context-dependent Networks in Multivariate Time Series: Models, Methods, and Risk Bounds in High Dimensions"
+authors = [ "Lili Zheng", "Garvesh Raskutti", "Rebecca Willett", "Benjamin Mark",]
+volume = 22
+issue = 216
+page_start = 1
+page_end = 88
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-244.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-244/20-244.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-244.bib"
+
+[[papers]]
+title = "A Unified Framework for Spectral Clustering in Sparse Graphs"
+authors = [ "Lorenzo Dall'Amico", "Romain Couillet", "Nicolas Tremblay",]
+volume = 22
+issue = 217
+page_start = 1
+page_end = 56
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-261.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-261/20-261.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-261.bib"
+
+[[papers]]
+title = "Thompson Sampling Algorithms for Cascading Bandits"
+authors = [ "Zixin Zhong", "Wang Chi Chueng", "Vincent Y. F. Tan",]
+volume = 22
+issue = 218
+page_start = 1
+page_end = 66
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-447.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-447/20-447.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-447.bib"
+
+[[papers]]
+title = "Soft Tensor Regression"
+authors = [ "Georgia Papadogeorgou", "Zhengwu Zhang", "David B. Dunson",]
+volume = 22
+issue = 219
+page_start = 1
+page_end = 53
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-476.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-476/20-476.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-476.bib"
+
+[[papers]]
+title = "Shape-Enforcing Operators for Generic Point and Interval  Estimators of Functions"
+authors = [ "Xi Chen", "Victor Chernozhukov", "Ivan Fernandez-Val", "Scott Kostyshak", "Ye Luo",]
+volume = 22
+issue = 220
+page_start = 1
+page_end = 42
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-513.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-513/20-513.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-513.bib"
+
+[[papers]]
+title = "A Bayes-Optimal View on Adversarial Examples"
+authors = [ "Eitan Richardson", "Yair Weiss",]
+volume = 22
+issue = 221
+page_start = 1
+page_end = 28
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-567.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-567/20-567.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-567.bib"
+
+[[papers]]
+title = "Classification vs regression in overparameterized regimes: Does the loss function matter?"
+authors = [ "Vidya Muthukumar", "Adhyyan Narang", "Vignesh Subramanian", "Mikhail Belkin", "Daniel Hsu", "Anant Sahai",]
+volume = 22
+issue = 222
+page_start = 1
+page_end = 69
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-603.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-603/20-603.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-603.bib"
+
+[[papers]]
+title = "Stochastic Online Optimization using Kalman Recursion"
+authors = [ "Joseph de Vilmarest", "Olivier Wintenberger",]
+volume = 22
+issue = 223
+page_start = 1
+page_end = 55
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-618.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-618/20-618.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-618.bib"
+
+[[papers]]
+title = "Bayesian Distance Clustering"
+authors = [ "Leo L. Duan", "David B. Dunson",]
+volume = 22
+issue = 224
+page_start = 1
+page_end = 27
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-688.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-688/20-688.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-688.bib"
+
+[[papers]]
+title = "Representer Theorems in Banach Spaces: Minimum Norm Interpolation, Regularized Learning and Semi-Discrete Inverse Problems"
+authors = [ "Rui Wang", "Yuesheng Xu",]
+volume = 22
+issue = 225
+page_start = 1
+page_end = 65
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-751.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-751/20-751.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-751.bib"
+
+[[papers]]
+title = "FATE: An Industrial Grade Platform for Collaborative Learning With Data Protection"
+authors = [ "Yang Liu", "Tao Fan", "Tianjian Chen", "Qian Xu", "Qiang Yang",]
+volume = 22
+issue = 226
+page_start = 1
+page_end = 6
+year = 2021
+is_mloss = true
+url_abs = "https://jmlr.org/papers/v22/20-815.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-815/20-815.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-815.bib"
+
+[[papers]]
+title = "Tighter Risk Certificates for Neural Networks"
+authors = [ "MarÃxada PÃ©rez-Ortiz", "Omar Rivasplata", "John Shawe-Taylor", "Csaba SzepesvÃ¡ri",]
+volume = 22
+issue = 227
+page_start = 1
+page_end = 40
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-879.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-879/20-879.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-879.bib"
+
+[[papers]]
+title = "How Well Generative Adversarial Networks Learn Distributions"
+authors = [ "Tengyuan Liang",]
+volume = 22
+issue = 228
+page_start = 1
+page_end = 41
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-911.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-911/20-911.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-911.bib"
+
+[[papers]]
+title = "Convolutional Neural Networks Are Not Invariant to Translation, but They Can Learn to Be"
+authors = [ "Valerio Biscione", "Jeffrey S. Bowers",]
+volume = 22
+issue = 229
+page_start = 1
+page_end = 28
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0019.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0019/21-0019.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0019.bib"
+
+[[papers]]
+title = "Learning with semi-definite programming: statistical bounds based on fixed point analysis and excess risk curvature"
+authors = [ "StÃ©phane ChrÃ©tien", "Mihai Cucuringu", "Guillaume LecuÃ©", "Lucie Neirac",]
+volume = 22
+issue = 230
+page_start = 1
+page_end = 64
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0021.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0021/21-0021.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0021.bib"
+
+[[papers]]
+title = "sklvq: Scikit Learning Vector Quantization"
+authors = [ "Rick van Veen", "Michael Biehl", "Gert-Jan de Vries",]
+volume = 22
+issue = 231
+page_start = 1
+page_end = 6
+year = 2021
+is_mloss = true
+url_abs = "https://jmlr.org/papers/v22/21-0029.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0029/21-0029.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0029.bib"
+
+[[papers]]
+title = "Probabilistic Iterative Methods for Linear Systems"
+authors = [ "Jon Cockayne", "Ilse C.F. Ipsen", "Chris J. Oates", "Tim W. Reid",]
+volume = 22
+issue = 232
+page_start = 1
+page_end = 34
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0031.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0031/21-0031.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0031.bib"
+
+[[papers]]
+title = "A Generalised Linear Model Framework for Î²-Variational Autoencoders based on Exponential Dispersion Families"
+authors = [ "Robert Sicks", "Ralf Korn", "Stefanie Schwaar",]
+volume = 22
+issue = 233
+page_start = 1
+page_end = 41
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0037.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0037/21-0037.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0037.bib"
+
+[[papers]]
+title = "A general linear-time inference method for Gaussian Processes on one dimension"
+authors = [ "Jackson Loper", "David Blei", "John P. Cunningham", "Liam Paninski",]
+volume = 22
+issue = 234
+page_start = 1
+page_end = 36
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0072.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0072/21-0072.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0072.bib"
+
+[[papers]]
+title = "GIBBON: General-purpose Information-Based Bayesian Optimisation"
+authors = [ "Henry B. Moss", "David S. Leslie", "Javier Gonzalez", "Paul Rayson",]
+volume = 22
+issue = 235
+page_start = 1
+page_end = 49
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0120.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0120/21-0120.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0120.bib"
+
+[[papers]]
+title = "Expanding Boundaries of Gap Safe Screening"
+authors = [ "Cassio F. Dantas", "Emmanuel Soubies", "CÃ©dric FÃ©votte",]
+volume = 22
+issue = 236
+page_start = 1
+page_end = 57
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0179.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0179/21-0179.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0179.bib"
+
+[[papers]]
+title = "Consensus-Based Optimization on the Sphere: Convergence to Global Minimizers and Machine Learning"
+authors = [ "Massimo Fornasier", "Lorenzo Pareschi", "Hui Huang", "Philippe SÃ¼nnen",]
+volume = 22
+issue = 237
+page_start = 1
+page_end = 55
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0259.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0259/21-0259.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0259.bib"
+
+[[papers]]
+title = "DeEPCA: Decentralized Exact PCA with  Linear Convergence Rate"
+authors = [ "Haishan Ye", "Tong Zhang",]
+volume = 22
+issue = 238
+page_start = 1
+page_end = 27
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0298.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0298/21-0298.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0298.bib"
+
+[[papers]]
+title = "Decentralized Stochastic Gradient Langevin Dynamics and Hamiltonian Monte Carlo"
+authors = [ "Mert GÃ¼rbÃ¼zbalaban", "Xuefeng Gao", "Yuanhan Hu", "Lingjiong Zhu",]
+volume = 22
+issue = 239
+page_start = 1
+page_end = 69
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0307.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0307/21-0307.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0307.bib"
+
+[[papers]]
+title = "DIG: A Turnkey Library for Diving into Graph Deep Learning Research"
+authors = [ "Meng Liu", "Youzhi Luo", "Limei Wang", "Yaochen Xie", "Hao Yuan", "Shurui Gui", "Haiyang Yu", "Zhao Xu", "Jingtun Zhang", "Yi Liu", "Keqiang Yan", "Haoran Liu", "Cong Fu", "Bora M Oztekin", "Xuan Zhang", "Shuiwang Ji",]
+volume = 22
+issue = 240
+page_start = 1
+page_end = 9
+year = 2021
+is_mloss = true
+url_abs = "https://jmlr.org/papers/v22/21-0343.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0343/21-0343.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0343.bib"
+
+[[papers]]
+title = "Sparsity in Deep Learning: Pruning and growth for efficient inference and training in neural networks"
+authors = [ "Torsten Hoefler", "Dan Alistarh", "Tal Ben-Nun", "Nikoli Dryden", "Alexandra Peste",]
+volume = 22
+issue = 241
+page_start = 1
+page_end = 124
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0366.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0366/21-0366.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0366.bib"
+
+[[papers]]
+title = "Wasserstein distance estimates for the distributions of numerical approximations to  ergodic stochastic differential equations"
+authors = [ "Jesus Maria Sanz-Serna", "Konstantinos C. Zygalakis",]
+volume = 22
+issue = 242
+page_start = 1
+page_end = 37
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0453.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0453/21-0453.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0453.bib"
+
+[[papers]]
+title = "Quasi-Monte Carlo Quasi-Newton in Variational Bayes"
+authors = [ "Sifan Liu", "Art B. Owen",]
+volume = 22
+issue = 243
+page_start = 1
+page_end = 23
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0498.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0498/21-0498.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0498.bib"
+
+[[papers]]
+title = "Consistency of Gaussian Process Regression in Metric Spaces"
+authors = [ "Peter Koepernik", "Florian Pfaff",]
+volume = 22
+issue = 244
+page_start = 1
+page_end = 27
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0853.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0853/21-0853.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0853.bib"
+
+[[papers]]
+title = "On lp-hyperparameter Learning via Bilevel Nonsmooth Optimization"
+authors = [ "Takayuki Okuno", "Akiko Takeda", "Akihiro Kawana", "Motokazu Watanabe",]
+volume = 22
+issue = 245
+page_start = 1
+page_end = 47
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-485.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-485/18-485.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-485.bib"
+
+[[papers]]
+title = "Mixture Martingales Revisited with Applications to Sequential Tests and Confidence Intervals"
+authors = [ "Emilie Kaufmann", "Wouter M. Koolen",]
+volume = 22
+issue = 246
+page_start = 1
+page_end = 44
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/18-798.html"
+url_pdf = "https://jmlr.org/papers/volume22/18-798/18-798.pdf"
+url_bib = "https://jmlr.org/papers/v22/18-798.bib"
+
+[[papers]]
+title = "Statistical Guarantees for Local Spectral Clustering on Random Neighborhood Graphs"
+authors = [ "Alden Green", "Sivaraman Balakrishnan", "Ryan J. Tibshirani",]
+volume = 22
+issue = 247
+page_start = 1
+page_end = 71
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-1016.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-1016/19-1016.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-1016.bib"
+
+[[papers]]
+title = "Statistically and Computationally Efficient Change Point Localization in Regression Settings"
+authors = [ "Daren Wang", "Zifeng Zhao", "Kevin Z. Lin", "Rebecca Willett",]
+volume = 22
+issue = 248
+page_start = 1
+page_end = 46
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/19-531.html"
+url_pdf = "https://jmlr.org/papers/volume22/19-531/19-531.pdf"
+url_bib = "https://jmlr.org/papers/v22/19-531.bib"
+
+[[papers]]
+title = "On the Riemannian Search for Eigenvector Computation"
+authors = [ "Zhiqiang Xu", "Ping Li",]
+volume = 22
+issue = 249
+page_start = 1
+page_end = 46
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-033.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-033/20-033.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-033.bib"
+
+[[papers]]
+title = "Bayesian time-aligned factor analysis of paired multivariate time series"
+authors = [ "Arkaprava Roy", "Jana Schaich Borg", "David B Dunson",]
+volume = 22
+issue = 250
+page_start = 1
+page_end = 27
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-048.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-048/20-048.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-048.bib"
+
+[[papers]]
+title = "Tractable Approximate Gaussian Inference for Bayesian Neural Networks"
+authors = [ "James-A. Goulet", "Luong Ha Nguyen", "Saeid Amiri",]
+volume = 22
+issue = 251
+page_start = 1
+page_end = 23
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1009.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1009/20-1009.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1009.bib"
+
+[[papers]]
+title = "Batch greedy maximization of non-submodular functions: Guarantees and applications to experimental design"
+authors = [ "Jayanth Jagalur-Mohan", "Youssef Marzouk",]
+volume = 22
+issue = 252
+page_start = 1
+page_end = 62
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1023.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1023/20-1023.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1023.bib"
+
+[[papers]]
+title = "Bifurcation Spiking Neural Network"
+authors = [ "Shao-Qun Zhang", "Zhao-Yu Zhang", "Zhi-Hua Zhou",]
+volume = 22
+issue = 253
+page_start = 1
+page_end = 21
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1031.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1031/20-1031.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1031.bib"
+
+[[papers]]
+title = "Inference for the Case Probability in High-dimensional Logistic Regression"
+authors = [ "Zijian Guo", "Prabrisha Rakshit", "Daniel S. Herman", "Jinbo Chen",]
+volume = 22
+issue = 254
+page_start = 1
+page_end = 54
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1050.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1050/20-1050.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1050.bib"
+
+[[papers]]
+title = "Adversarial Monte Carlo Meta-Learning of Optimal Prediction Procedures"
+authors = [ "Alex Luedtke", "Incheoul Chung", "Oleg Sofrygin",]
+volume = 22
+issue = 255
+page_start = 1
+page_end = 67
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1065.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1065/20-1065.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1065.bib"
+
+[[papers]]
+title = "Model Linkage Selection for Cooperative Learning"
+authors = [ "Jiaying Zhou", "Jie Ding", "Kean Ming Tan", "Vahid Tarokh",]
+volume = 22
+issue = 256
+page_start = 1
+page_end = 44
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1078.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1078/20-1078.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1078.bib"
+
+[[papers]]
+title = "Estimating Uncertainty Intervals from Collaborating Networks"
+authors = [ "Tianhui Zhou", "Yitong Li", "Yuan Wu", "David Carlson",]
+volume = 22
+issue = 257
+page_start = 1
+page_end = 47
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1100.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1100/20-1100.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1100.bib"
+
+[[papers]]
+title = "Optimized Score Transformation for Consistent Fair Classification"
+authors = [ "Dennis Wei", "Karthikeyan Natesan Ramamurthy", "Flavio P. Calmon",]
+volume = 22
+issue = 258
+page_start = 1
+page_end = 78
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1143.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1143/20-1143.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1143.bib"
+
+[[papers]]
+title = "ROOTS: Object-Centric Representation and Rendering of 3D Scenes"
+authors = [ "Chang Chen", "Fei Deng", "Sungjin Ahn",]
+volume = 22
+issue = 259
+page_start = 1
+page_end = 36
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1176.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1176/20-1176.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1176.bib"
+
+[[papers]]
+title = "Learning Strategies in Decentralized Matching Markets under Uncertain Preferences"
+authors = [ "Xiaowu Dai", "Michael I. Jordan",]
+volume = 22
+issue = 260
+page_start = 1
+page_end = 50
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1221.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1221/20-1221.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1221.bib"
+
+[[papers]]
+title = "Domain adaptation under structural causal models"
+authors = [ "Yuansi Chen", "Peter BÃ¼hlmann",]
+volume = 22
+issue = 261
+page_start = 1
+page_end = 80
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1227.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1227/20-1227.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1227.bib"
+
+[[papers]]
+title = "Revisiting Model-Agnostic Private Learning: Faster Rates and Active Learning"
+authors = [ "Chong Liu", "Yuqing Zhu", "Kamalika Chaudhuri", "Yu-Xiang Wang",]
+volume = 22
+issue = 262
+page_start = 1
+page_end = 44
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1251.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1251/20-1251.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1251.bib"
+
+[[papers]]
+title = "On the Stability Properties and the Optimization Landscape of Training Problems with Squared Loss for Neural Networks and General Nonlinear Conic Approximation Schemes"
+authors = [ "Constantin Christof",]
+volume = 22
+issue = 263
+page_start = 1
+page_end = 77
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1259.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1259/20-1259.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1259.bib"
+
+[[papers]]
+title = "Regularized spectral methods for clustering signed networks"
+authors = [ "Mihai Cucuringu", "Apoorv Vikram Singh", "DÃ©borah Sulem", "Hemant Tyagi",]
+volume = 22
+issue = 264
+page_start = 1
+page_end = 79
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1289.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1289/20-1289.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1289.bib"
+
+[[papers]]
+title = "Exact Asymptotics for Linear Quadratic Adaptive Control"
+authors = [ "Feicheng Wang", "Lucas Janson",]
+volume = 22
+issue = 265
+page_start = 1
+page_end = 112
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1292.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1292/20-1292.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1292.bib"
+
+[[papers]]
+title = "Learning Bayesian Networks from Ordinal Data"
+authors = [ "Xiang Ge Luo", "Giusi Moffa", "Jack Kuipers",]
+volume = 22
+issue = 266
+page_start = 1
+page_end = 44
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1338.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1338/20-1338.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1338.bib"
+
+[[papers]]
+title = "Reproducing kernel Hilbert C*-module and kernel mean embeddings"
+authors = [ "Yuka Hashimoto", "Isao Ishikawa", "Masahiro Ikeda", "Fuyuta Komura", "Takeshi Katsura", "Yoshinobu Kawahara",]
+volume = 22
+issue = 267
+page_start = 1
+page_end = 56
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1346.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1346/20-1346.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1346.bib"
+
+[[papers]]
+title = "Stable-Baselines3: Reliable Reinforcement Learning Implementations"
+authors = [ "Antonin Raffin", "Ashley Hill", "Adam Gleave", "Anssi Kanervisto", "Maximilian Ernestus", "Noah Dormann",]
+volume = 22
+issue = 268
+page_start = 1
+page_end = 8
+year = 2021
+is_mloss = true
+url_abs = "https://jmlr.org/papers/v22/20-1364.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1364/20-1364.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1364.bib"
+
+[[papers]]
+title = "CAT: Compression-Aware Training for bandwidth reduction"
+authors = [ "Chaim Baskin", "Brian Chmiel", "Evgenii Zheltonozhskii", "Ron Banner", "Alex M. Bronstein", "Avi Mendelson",]
+volume = 22
+issue = 269
+page_start = 1
+page_end = 20
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1374.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1374/20-1374.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1374.bib"
+
+[[papers]]
+title = "Further results on latent discourse models and word embeddings"
+authors = [ "Sammy Khalife", "Douglas GonÃ§alves", "Youssef Allouah", "Leo Liberti",]
+volume = 22
+issue = 270
+page_start = 1
+page_end = 36
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1413.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1413/20-1413.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1413.bib"
+
+[[papers]]
+title = "Nonparametric Continuous Sensor Registration"
+authors = [ "William Clark", "Maani Ghaffari", "Anthony Bloch",]
+volume = 22
+issue = 271
+page_start = 1
+page_end = 50
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-1468.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-1468/20-1468.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-1468.bib"
+
+[[papers]]
+title = "Transferability of Spectral Graph Convolutional Neural Networks"
+authors = [ "Ron Levie", "Wei Huang", "Lorenzo Bucci", "Michael Bronstein", "Gitta Kutyniok",]
+volume = 22
+issue = 272
+page_start = 1
+page_end = 59
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-213.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-213/20-213.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-213.bib"
+
+[[papers]]
+title = "On the Hardness of Robust Classification"
+authors = [ "Pascale Gourdeau", "Varun Kanade", "Marta Kwiatkowska", "James Worrell",]
+volume = 22
+issue = 273
+page_start = 1
+page_end = 29
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-285.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-285/20-285.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-285.bib"
+
+[[papers]]
+title = "Simultaneous Change Point Inference and Structure Recovery for High Dimensional Gaussian Graphical Models"
+authors = [ "Bin Liu", "Xinsheng Zhang", "Yufeng Liu",]
+volume = 22
+issue = 274
+page_start = 1
+page_end = 62
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-327.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-327/20-327.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-327.bib"
+
+[[papers]]
+title = "Partial Policy Iteration for L1-Robust Markov Decision Processes"
+authors = [ "Chin Pang Ho", "Marek Petrik", "Wolfram Wiesemann",]
+volume = 22
+issue = 275
+page_start = 1
+page_end = 46
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-445.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-445/20-445.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-445.bib"
+
+[[papers]]
+title = "Estimating the Lasso's Effective Noise"
+authors = [ "Johannes Lederer", "Michael Vogt",]
+volume = 22
+issue = 276
+page_start = 1
+page_end = 32
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-539.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-539/20-539.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-539.bib"
+
+[[papers]]
+title = "Gaussian Approximation for Bias Reduction in Q-Learning"
+authors = [ "Carlo D'Eramo", "Andrea Cini", "Alessandro Nuara", "Matteo Pirotta", "Cesare Alippi", "Jan Peters", "Marcello Restelli",]
+volume = 22
+issue = 277
+page_start = 1
+page_end = 51
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-633.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-633/20-633.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-633.bib"
+
+[[papers]]
+title = "Multilevel Monte Carlo Variational Inference"
+authors = [ "Masahiro Fujisawa", "Issei Sato",]
+volume = 22
+issue = 278
+page_start = 1
+page_end = 44
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-653.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-653/20-653.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-653.bib"
+
+[[papers]]
+title = "Fast Learning for Renewal Optimization in Online Task Scheduling"
+authors = [ "Michael J. Neely",]
+volume = 22
+issue = 279
+page_start = 1
+page_end = 44
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/20-813.html"
+url_pdf = "https://jmlr.org/papers/volume22/20-813/20-813.pdf"
+url_bib = "https://jmlr.org/papers/v22/20-813.bib"
+
+[[papers]]
+title = "Graph Matching with Partially-Correct Seeds"
+authors = [ "Liren Yu", "Jiaming Xu", "Xiaojun Lin",]
+volume = 22
+issue = 280
+page_start = 1
+page_end = 54
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0020.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0020/21-0020.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0020.bib"
+
+[[papers]]
+title = "Contrastive Estimation Reveals Topic Posterior Information to Linear Models"
+authors = [ "Christopher Tosh", "Akshay Krishnamurthy", "Daniel Hsu",]
+volume = 22
+issue = 281
+page_start = 1
+page_end = 31
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0089.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0089/21-0089.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0089.bib"
+
+[[papers]]
+title = "LDLE: Low Distortion Local Eigenmaps"
+authors = [ "Dhruv Kohli", "Alexander Cloninger", "Gal Mishne",]
+volume = 22
+issue = 282
+page_start = 1
+page_end = 64
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0131.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0131/21-0131.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0131.bib"
+
+[[papers]]
+title = "Non-linear, Sparse Dimensionality Reduction via Path Lasso Penalized Autoencoders"
+authors = [ "Oskar Allerbo", "Rebecka JÃ¶rnsten",]
+volume = 22
+issue = 283
+page_start = 1
+page_end = 28
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0203.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0203/21-0203.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0203.bib"
+
+[[papers]]
+title = "Linear Bandits on Uniformly Convex Sets"
+authors = [ "Thomas Kerdreux", "Christophe Roux", "Alexandre d'Aspremont", "Sebastian Pokutta",]
+volume = 22
+issue = 284
+page_start = 1
+page_end = 23
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0277.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0277/21-0277.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0277.bib"
+
+[[papers]]
+title = "Double Generative Adversarial Networks for Conditional Independence Testing"
+authors = [ "Chengchun Shi", "Tianlin Xu", "Wicher Bergsma", "Lexin Li",]
+volume = 22
+issue = 285
+page_start = 1
+page_end = 32
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0294.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0294/21-0294.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0294.bib"
+
+[[papers]]
+title = "An Online Sequential Test for Qualitative Treatment Effects"
+authors = [ "Chengchun Shi", "Shikai Luo", "Hongtu Zhu", "Rui Song",]
+volume = 22
+issue = 286
+page_start = 1
+page_end = 51
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0383.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0383/21-0383.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0383.bib"
+
+[[papers]]
+title = "V-statistics and Variance Estimation"
+authors = [ "Zhengze Zhou", "Lucas Mentch", "Giles Hooker",]
+volume = 22
+issue = 287
+page_start = 1
+page_end = 48
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0575.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0575/21-0575.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0575.bib"
+
+[[papers]]
+title = "A Theory of the Risk for Optimization with Relaxation and its Application to Support Vector Machines"
+authors = [ "Marco C. Campi", "Simone Garatti",]
+volume = 22
+issue = 288
+page_start = 1
+page_end = 38
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0641.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0641/21-0641.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0641.bib"
+
+[[papers]]
+title = "VariBAD: Variational Bayes-Adaptive Deep RL via Meta-Learning"
+authors = [ "Luisa Zintgraf", "Sebastian Schulze", "Cong Lu", "Leo Feng", "Maximilian Igl", "Kyriacos Shiarlis", "Yarin Gal", "Katja Hofmann", "Shimon Whiteson",]
+volume = 22
+issue = 289
+page_start = 1
+page_end = 39
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0657.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0657/21-0657.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0657.bib"
+
+[[papers]]
+title = "On Universal Approximation and Error Bounds for Fourier Neural Operators"
+authors = [ "Nikola Kovachki", "Samuel Lanthaler", "Siddhartha Mishra",]
+volume = 22
+issue = 290
+page_start = 1
+page_end = 76
+year = 2021
+is_mloss = false
+url_abs = "https://jmlr.org/papers/v22/21-0806.html"
+url_pdf = "https://jmlr.org/papers/volume22/21-0806/21-0806.pdf"
+url_bib = "https://jmlr.org/papers/v22/21-0806.bib"
+
