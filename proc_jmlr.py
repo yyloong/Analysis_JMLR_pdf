@@ -1,193 +1,439 @@
-from typing import TypeAlias, Optional, Union, List, Tuple, Dict, Any
-from pathlib import Path
-
-import re
-import pprint
-import unicodedata
 import fitz  # PyMuPDF
-
+import unicodedata
+import pandas as pd
+import re
 import os
-import platform
-import argparse
 
 
-BOLD = "\033[1m"
-RED = "\033[31m"
-GREEN = "\033[32m"
-YELLOW = "\033[33m"
-BLUE = "\033[34m"
-MAGENTA = "\033[35m"
-RESET = "\033[0m"
-
-
-# Windows 终端开启 ANSI 颜色转义功能
-if platform.system() == "Windows":
-    os.system("color")
-
-
-PiecesType: TypeAlias = List[Dict[str, Union[str, Tuple[float, float, float, float]]]]
-
-
-class JMLRPDFExtractionError(Exception):
-    """自定义异常类, 用于标识无法从中提取文本区块的 PDF 文件"""
-
-    pass
-
-
-def normalize_text(text: str) -> str:
+def str_font_style_flags(flags):
     """
-    规范化文本内容:
-    1. 统一 Unicode 规范形式为 NFKD
-    2. 去除首尾空白符
-    3. 转义空格和换行符以外的空白符
+    将字体样式标志位转换为可读的字符串描述。
 
     Args:
-        text (str): 待规范化的文本内容
+        flags (int): 字体样式的位标志
+
     Returns:
-        str: 规范化后的文本内容
+        str: 字体样式的字符串描述, 多个样式用逗号分隔
     """
-
-    # 兼容性分解, 彻底分解等价的 Unicode 字符, 如将 "ﬁ" 分解为 "fi"
-    text = unicodedata.normalize("NFKD", text)
-    # 去除首尾空白符
-    text = text.strip()
-    # 转义空格和换行符以外的空白符
-    text = re.sub(r"\r\n", "\n", text)  # 先处理 Windows 风格换行
-    text = re.sub(r"\r", "\n", text)  # 再处理 Mac 风格换行
-    text = re.sub(r"\v", "\n", text)  # 垂直制表符视为换行符
-    text = re.sub(r"(?u)[^\S \n]+", " ", text)  # 其他空白符视为空格
-    return text
+    styles = []
+    # 遍历每个样式位, 检查对应的标志是否设置
+    for bit_shift, style_name in enumerate(["Superscripted", "Italic", "Serifed", "Monospaced", "Bold"]):
+        if (flags >> bit_shift) & 1:
+            styles.append(style_name)
+    if len(styles) == 0:
+        styles.append("Regular")
+    return ", ".join(styles)
 
 
-def print_pieces(pieces: PiecesType, pdf_source: str = "") -> None:
+def inspect_fonts_pymupdf(pdf_path):
     """
-    美观打印文本区块内容
+    检查PDF文件的第一页内容, 提取文本块的字体信息直到遇到"Abstract"。
 
     Args:
-        pieces (PiecesType): 待打印的文本区块列表
-        pdf_source (str): PDF 文件来源, 用于打印调试信息
-    """
+        pdf_path (str): PDF文件路径
 
-    if len(pdf_source) > 0:
-        print(f"{RED}--- Pieces of {repr(pdf_source)} ---{RESET}\n")
-    else:
-        print(f"{RED}--- Pieces ---{RESET}\n")
-    for piece in pieces:
-        text = piece["text"]
-        x0, y0, x1, y1 = piece["rect"]
-        indented_text = text.replace("\n", "\n" + " " * 16)  # 缩进换行, 保持美观
-        print(f"Box rectangle:  {GREEN}({x0:.1f}, {y0:.1f}) -> ({x1:.1f}, {y1:.1f}){RESET}  # (x0, y0) -> (x1, y1)")
-        print(f"Text content:   {YELLOW}{indented_text}{RESET}\n")
-
-
-def coarse_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType:
-    """
-    粗筛文本区块, 过滤摘要和正文
-
-    Args:
-        pieces (PiecesType): 待过滤的文本区块列表
-        pdf_source (str): PDF 文件来源, 用于打印调试信息
     Returns:
-        PiecesType: 过滤后的文本区块列表
+        list: 包含文本块信息的字典列表, 每个字典包含text、location、size、style和font信息
     """
 
-    # "Editor" 之后, "Copyright" 之前, 完全丢弃
-    left_index = -1
-    right_index = -1
-    for i in range(len(pieces)):
-        # JMLR 格式的论文中, "Editor" 之后的内容为摘要
-        if re.search(r"(?u)Editor", pieces[i]["text"], re.IGNORECASE):
-            left_index = i
-        elif re.search(r"(?u)Abstract", pieces[i]["text"], re.IGNORECASE):
-            left_index = i - 1
-        # JMLR 格式的论文中, Copyright 符号之后的内容为页脚
-        if re.search(r"(?u)(c\u20dd)|(c\n\u20dd)(c\u25cb)||(\u00a9)", pieces[i]["text"], re.IGNORECASE):
-            right_index = i
-    if left_index != -1 and right_index != -1 and left_index < right_index:
-        filtered_pieces = pieces[:left_index] + pieces[right_index:]
-        return filtered_pieces
-    else:
-        print_pieces(pieces=pieces, pdf_source=pdf_source)
-        return pieces
+    # NOTE: https://pymupdf.readthedocs.io/en/latest/textpage.html#structure-of-dictionary-outputs
 
+    # 打开 pdf 文件, 只提取第一页
+    doc = fitz.open(pdf_path)
+    page = doc[0]
 
-def parse_jmlr_pdf(pdf_path: Path, verbose: bool = True) -> PiecesType:
-    """
-    解析 JMLR 论文首页内容
+    raw_blocks = page.get_text("dict")["blocks"]
+    filtered_blocks = []
 
-    Args:
-        pdf_path (Path): JMLR 论文 PDF 文件路径
-        verbose (bool): 是否打印解析过程中的调试信息, 默认为 True
-    Returns:
-        PiecesType: 解析得到的文本区块列表, 每个区块包含文本内容和矩形位置
-    """
+    for block in raw_blocks:
 
-    # 打开文档, 准备提取内容
-    jmlr = fitz.open(pdf_path)
-    pieces = []
-
-    # 仅需提取首页内容
-    first_page = jmlr.load_page(0)
-    blocks = first_page.get_text("blocks")
-    # 遍历首页区块, 请见 https://pymupdf.readthedocs.io/en/latest/textpage.html
-    for block in blocks:
-        x0, y0, x1, y1, text, block_no, block_type = block
-        # 仅需提取文本区块, 文本区块当且仅当 b_type == 0
-        if block_type != 0:
+        if not "lines" in block:
             continue
-        # 正则化文本内容
-        text = normalize_text(text)
-        piece = {"text": text, "rect": (x0, y0, x1, y1)}
-        pieces.append(piece)
 
-    # 如果没有提取到任何文本区块, 则报错
-    if len(pieces) == 0:
-        print(f"{RED}[!] Error: No pieces extracted from {repr(pdf_path)}{RESET}")
-        raise JMLRPDFExtractionError(f"No pieces extracted from {repr(pdf_path)}")
+        for line in block["lines"]:
+            for span in line["spans"]:
+                text = span["text"]
 
-    # 依据左上角的坐标排序区块, 保持从上到下和从左到右的顺序
-    pieces.sort(key=lambda piece: (piece["rect"][1], piece["rect"][0]))
+                # 检查是否遇到 "Abstract"（不区分大小写）
+                # 遇到 "Abstract" 后立即关闭文档, 返回结果
+                if text.strip().lower() == "abstract":
+                    doc.close()
+                    return filtered_blocks
 
-    # 粗筛文本区块, 过滤摘要和正文
-    pieces = coarse_filter_pieces(pieces=pieces, pdf_source=repr(pdf_path))
+                size = span["size"]  # 字体大小
+                location = span["bbox"]  # 矩形框位置大小 (x0, y0, x1, y1)
+                flags = span["flags"]  # 字体样式
+                style = str_font_style_flags(flags)  # 字体样式描述
+                font = span["font"]  # 字体名称
 
-    # 如果开启 verbose 模式, 打印文档区块内容
-    if verbose:
-        print_pieces(pieces=pieces, pdf_source=str(pdf_path))
+                filtered_block = {
+                    "text": text,
+                    "location": location,
+                    "size": size,
+                    "style": style,
+                    "font": font,
+                }
 
-    # 关闭文档, 返回内容
-    jmlr.close()
-    return pieces
+                filtered_blocks.append(filtered_block)
 
-
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Parse JMLR PDF metadata.")
-    parser.add_argument("--pdf_path", type=Path, help="Path to the JMLR PDF file.")
-    return parser.parse_args()
-
-
-def main() -> None:
-    args = parse_args()
-    parse_jmlr_pdf(args.pdf_path, verbose=True)
+    # 遍历文档内容结束, 关闭文档, 返回结果
+    doc.close()
+    return filtered_blocks
 
 
-def test() -> None:
-    pdf_dirs = [
-        "../jmlr_2020/main_track",
-        "../jmlr_2021/main_track",
-        "../jmlr_2022/main_track",
-        "../jmlr_2023/main_track",
-        "../jmlr_2024/main_track",
-    ]
-    for pdf_dir in pdf_dirs:
-        for pdf_name in os.listdir(pdf_dir):
-            pdf_path = os.path.join(pdf_dir, pdf_name)
-            try:
-                parse_jmlr_pdf(pdf_path, verbose=False)
-            except JMLRPDFExtractionError:
-                pass
+def compare_alphanumeric(str1, str2):
+    """
+    比较两个字符串的字母数字部分是否相等。
+
+    Args:
+        str1 (str): 第一个字符串
+        str2 (str): 第二个字符串
+
+    Returns:
+        bool: 如果两个字符串的字母数字部分相等则返回True
+    """
+    # 先对字符串进行规范化, 分解连字（如 ﬁ -> fi）
+    normalized_str1 = unicodedata.normalize("NFKD", str1).lower()
+    normalized_str2 = unicodedata.normalize("NFKD", str2).lower()
+    # 提取字母和数字, 忽略其他字符
+    alphanumeric1 = "".join(
+        c for c in normalized_str1 if ord("0") <= ord(c) and ord(c) <= ord("9") or ord("a") <= ord(c) and ord(c) <= ord("z")
+    )
+    alphanumeric2 = "".join(
+        c for c in normalized_str2 if ord("0") <= ord(c) and ord(c) <= ord("9") or ord("a") <= ord(c) and ord(c) <= ord("z")
+    )
+    return alphanumeric1 == alphanumeric2
+
+
+def is_valid_jmlr_format(s):
+    """
+    检查字符串是否符合JMLR期刊格式要求。
+
+    Args:
+        s (str): 待检查的字符串
+
+    Returns:
+        bool: 如果符合JMLR格式则返回True
+    """
+    pattern = r"^\s*Journal of Machine Learning Research\s*(?:volume\s*)?(\d+\s*)?\(\d{4}\)\s*\d+-\d+\s*Submitted\s*\d{1,2}/\d{2}\s*(?:;)?\s*(?:Revised\s*(?:\d{1,2}/\d{2}\s*(?:&\s*\d{1,2}/\d{2}\s*)*)?;)?\s*Published\s*(?:\d{1,2}/\d{2}\s*)?$"
+    return bool(re.match(pattern, s))
+
+
+def is_valid_id(s):
+    """
+    检查字符串是否为有效的ID格式。
+
+    Args:
+        s (str): 待检查的字符串
+
+    Returns:
+        bool: 如果是有效的ID格式则返回True
+    """
+    pattern = r"^(?:\s*\d+\s*$|\s*(?:\d+|[\*†♢♯♭‡∗])(?:\s*,\s*(?:\d+|[\*†♢♯♭‡∗]))*\s*,?\s*$)"
+    return bool(re.match(pattern, s)) and not re.match(r"^\s*[\*†♢♯♭‡∗]\s*$", s)
+
+
+def check_authors_aline(authors_line_list, result):
+    """
+    检查作者行是否对齐。
+
+    Args:
+        authors_line_list (list): 作者行索引列表
+        result (list): 解析结果列表
+
+    Returns:
+        bool: 如果作者行对齐则返回True
+    """
+    for author_line in authors_line_list:
+        if abs(result[author_line]["location"][0] - result[authors_line_list[0]]["location"][0]) > 5:
+            print(result[author_line], result[authors_line_list[0]])
+            return False
+    return True
+
+
+def check_email_location(authors_line_list, result):
+    """
+    检查每个作者是否都有对应的email。
+
+    Args:
+        authors_line_list (list): 作者行索引列表
+        result (list): 解析结果列表
+
+    Returns:
+        bool: 如果每个作者都有对应email则返回True
+    """
+    for author_line in authors_line_list:
+        now_line = author_line
+        find_email = False
+        while result[author_line]["location"][3] > result[now_line]["location"][1] and now_line < len(result):
+            now_line += 1
+            if "@" in result[now_line]["text"]:
+                find_email = True
+        if not find_email:
+            return False
+    return True
+
+
+def get_editor_line(result):
+    """
+    获取编辑行的索引。
+
+    Args:
+        result (list): 解析结果列表
+
+    Returns:
+        int: 编辑行的索引, 如果未找到则返回None
+    """
+    for line in range(len(result)):
+        if result[line]["text"] == "Editor:":
+            return line
+    return None
+
+
+def get_authors_line(first_authors_line, editor_line, result):
+    """
+    获取所有作者行的索引列表。
+
+    Args:
+        first_authors_line (int): 第一个作者行的索引
+        editor_line (int): 编辑行的索引
+        result (list): 解析结果列表
+
+    Returns:
+        list: 作者行索引列表
+    """
+    authors_line_list = []
+    for line in range(first_authors_line, editor_line):
+        if (
+            result[line]["font"] == result[first_authors_line]["font"]
+            and result[line]["size"] == result[first_authors_line]["size"]
+        ):
+            authors_line_list.append(line)
+    return authors_line_list
+
+
+def analysis_normal_format(line, result, metadata_dict):
+    """
+    分析常规格式的论文内容, 提取作者、机构和编辑信息。
+    
+    处理流程:
+    1. 查找编辑行位置
+    2. 获取所有作者行
+    3. 检查作者行对齐和邮箱位置
+    4. 处理每位作者的信息:
+       - 清理作者名中的特殊字符
+       - 提取机构信息
+       - 处理作者机构的继承关系
+    5. 保存编辑信息
+    6. 进行各种有效性验证
+
+    Args:
+        line (int): 从title后的起始行号
+        result (list): PDF解析出的文本块列表
+        metadata_dict (dict): 存储元数据的字典
+    """
+
+    # 获取编辑行位置
+    editor_line = get_editor_line(result) 
+    if editor_line == None:
+        return False, metadata_dict["title"], "No editor"
+
+    # 获取所有作者行,并进行格式检查
+    authors_line_list = get_authors_line(line, editor_line, result)
+    if authors_line_list == []:
+        return False, metadata_dict["title"], "No authors"
+
+    # 检查作者行是否左对齐
+    if check_authors_aline(authors_line_list, result) == False:
+        return False, metadata_dict["title"], "Authors not aline"
+
+    # 检查每个作者是否都有对应的email
+    if check_email_location(authors_line_list, result) == False:
+        return False, metadata_dict["title"], "Email location not valid"
+
+    authors = list()
+
+    # 处理每个作者的信息
+    for i, author_line in enumerate(authors_line_list):
+        # 清理作者名中的特殊字符(* †)
+        now_author = result[author_line]["text"]
+        while now_author[-1] in ["*", "†"]:
+            now_author = now_author[:-1]
+        authors.append({"name": now_author, "affiliation": []})
+        
+        # 定位到作者名下方的机构信息起始位置
+        line = author_line + 1
+        while line < len(result) and result[line]["location"][1] < result[author_line]["location"][3]:
+            line += 1
+
+        # 收集该作者的所有机构信息,直到遇到下一个作者或Editor
+        while (
+            line < len(result)
+            and result[line]["text"] != "Editor:"
+            and (i == len(authors_line_list) - 1 or line != authors_line_list[i + 1])
+        ):
+            # 检查单字符是否合法
+            if len(result[line]["text"]) == 1:
+                if (
+                    (ord(result[line]["text"]) > ord("9") or ord(result[line]["text"]) < ord("0"))
+                    and (ord(result[line]["text"]) < ord("a") or ord(result[line]["text"]) > ord("z"))
+                    and (ord(result[line]["text"]) < ord("A") or ord(result[line]["text"]) > ord("Z"))
+                    and result[line]["text"] not in {" ", ",", ".", "-", "&", "(", ")", "/"}
+                ):
+                    print(f"error str : {result[line]['text']}")
+                    return False, metadata_dict["title"], "error str"
+            authors[-1]["affiliation"].append(result[line]["text"])
+            line += 1
+
+    metadata_dict["authors"] = authors
+
+    # 保存编辑信息
+    metadata_dict["editor"] = result[line + 1]["text"] if line + 1 < len(result) else None
+
+    # 验证作者信息的完整性
+    if len(metadata_dict["authors"]) == 0:
+        print(f"author: {metadata_dict['authors']}")
+        print("authors not found ")
+        return False, metadata_dict["title"], "authors not found"
+
+    if metadata_dict["authors"][-1]["affiliation"] == []:
+        print("empty author affiliation")
+        return False, metadata_dict["title"], "empty author affiliation"
+
+    # 对于没有单独列出机构的作者,继承上一个作者的机构信息
+    for author in range(len(metadata_dict["authors"]) - 2, -1, -1):
+        if metadata_dict["authors"][author]["affiliation"] == []:
+            metadata_dict["authors"][author]["affiliation"] = metadata_dict["authors"][author + 1]["affiliation"]
+
+    return True, metadata_dict, None
+
+
+def analysis_result(pdf_name, result):
+    """
+    分析PDF文件内容, 提取论文的元数据信息。
+    
+    处理流程:
+    1. 查找并验证JMLR期刊头部信息
+    2. 提取论文标题:
+       - 将PDF文件名作为标题
+       - 查找文本中对应的标题行
+    3. 确定文档格式:
+       - 通过judge_format函数判断是否为id格式
+       - id格式: 作者标记为数字编号
+       - normal格式: 常规的作者-机构对应格式
+    4. 根据不同格式调用对应的处理函数
+    
+    Args:
+        pdf_name (str): PDF文件名
+        result (list): PDF解析出的文本块列表
+        
+    Returns:
+        tuple: (是否解析成功, 元数据字典或标题, 错误信息)
+    """
+
+    # 从第一行开始查找JMLR期刊头部信息
+    line = 0 
+    header = result[line]["text"]
+    while not is_valid_jmlr_format(header) and line + 1 < len(result):
+        line += 1
+        header += result[line]["text"]
+        print(header)
+
+    line += 1
+
+    # 若未找到header,从文件开始处理
+    if line >= len(result):
+        line = 0
+
+    # 去掉pdf文件的扩展名
+    pdf_name = pdf_name[:-4] if pdf_name.endswith(".pdf") else pdf_name
+    print(result)
+    metadata_dict = dict()
+    
+    # 提取标题文本,直到与pdf文件名匹配
+    metadata_dict["title"] = result[line]["text"]
+    while line + 1 < len(result) and not compare_alphanumeric(metadata_dict["title"], pdf_name):
+        line += 1
+        metadata_dict["title"] += result[line]["text"]
+
+    if line >= len(result) - 1:
+        print("cannot find title")
+        return False, pdf_name, "cannot find title"
+
+    # 跳过标题所占的多行
+    title_line = line  
+    line += 1
+    while result[line]["location"][1] < result[title_line]["location"][3]:
+        line += 1
+
+    metadata_dict["title"] = pdf_name
+
+    def judge_format(line, result):
+        """
+        判断文档是否为id格式
+        通过检查作者后是否紧跟数字id来判断
+        
+        Args:
+            line (int): 当前处理行号
+            result (list): PDF解析结果
+            
+        Returns:
+            bool: True表示id格式, False表示常规格式
+        """
+        now_str = ""
+        line += 1
+        while not is_valid_id(now_str) and line < len(result):
+            now_str += result[line]["text"]
+            print(now_str)
+            line += 1
+        if line >= len(result):
+            return False
+        return True
+
+    if judge_format(line, result):
+        print("id format")
+        return False, metadata_dict["title"], "id format"
+    else:
+        print("normal format")
+        return analysis_normal_format(line, result, metadata_dict)
 
 
 if __name__ == "__main__":
-    # main()
-    test()
+
+    pdf_path = "../JMLR 2024"
+
+    fail_list = []
+    paper_metadata_set = []
+
+    for pdf in sorted(os.listdir(pdf_path)):
+        if pdf.endswith(".pdf"):
+            pdf_full = os.path.join(pdf_path, pdf)
+            print(f"Processing {pdf}...")
+            result = inspect_fonts_pymupdf(pdf_full)
+            success, pdf_metadata, info = analysis_result(pdf, result)
+            if not success:
+                fail_list.append((pdf_metadata, info))
+                continue
+            paper_metadata_set.append(pdf_metadata)
+            print(pdf_metadata)
+
+    print("success")
+    print(paper_metadata_set)
+    print("fail")
+    print(fail_list)
+    print(f"success : {len(paper_metadata_set)},fail : {len(fail_list)}")
+    pd.DataFrame(paper_metadata_set).to_csv("jmlr_2024_metadata.csv", index=False)
+
+    # print(
+    #     inspect_fonts_pymupdf(
+    #         'JMLR 2024/Accelerated Gradient Tracking over Time-varying Graphs for Decentralized Optimization.pdf'
+    #     )
+    # )
+    # print(
+    #     analysis_result(
+    #         'Accelerated Gradient Tracking over Time-varying Graphs for Decentralized Optimization.pdf',
+    #         inspect_fonts_pymupdf(
+    #             'JMLR 2024/Accelerated Gradient Tracking over Time-varying Graphs for Decentralized Optimization.pdf'
+    #         ),
+    #     )
+    # )
