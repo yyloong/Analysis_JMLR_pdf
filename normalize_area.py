@@ -15,9 +15,7 @@ messages = [
 ]
 
 # 示例输入
-locations = [
-    "Department of Mathematics, City University of Hong Kong Kowloon, Hong Kong, China"
-]
+locations = ["Department of Mathematics, City University of Hong Kong Kowloon, Hong Kong, China"]
 
 for location in locations:
     print(f"Processing: {location}")
@@ -33,5 +31,7 @@ for location in locations:
     print(result)
     # 提取并打印token使用情况
     usage = completion.usage
-    print(f"Token Usage: Prompt Tokens: {usage.prompt_tokens}, Completion Tokens: {usage.completion_tokens}, Total Tokens: {usage.total_tokens}")
-    print('---')
+    print(
+        f"Token Usage: Prompt Tokens: {usage.prompt_tokens}, Completion Tokens: {usage.completion_tokens}, Total Tokens: {usage.total_tokens}"
+    )
+    print("---")
