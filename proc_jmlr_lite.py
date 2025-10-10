@@ -25,6 +25,11 @@ if platform.system() == "Windows":
     os.system("color")
 
 
+# pieces 中每个元素的结构:
+# {
+#     "text": str,  # 文本内容
+#     "rect": (x0: float, y0: float, x1: float, y1: float)  # 文本区块的矩形位置
+# }
 PiecesType: TypeAlias = List[Dict[str, Union[str, Tuple[float, float, float, float]]]]
 
 
@@ -94,6 +99,7 @@ def coarse_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType
     # "Editor" 之后, "Copyright" 之前, 完全丢弃
     left_index = -1
     right_index = -1
+    # 遍历 pieces, 找到 "Editor" / "Abstract" 和 "Copyright" 所在的区块索引
     for i in range(len(pieces)):
         # JMLR 格式的论文中, "Editor" 之后的内容为摘要
         if re.search(r"(?u)Editor", pieces[i]["text"], re.IGNORECASE):
@@ -101,11 +107,13 @@ def coarse_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType
         elif re.search(r"(?u)Abstract", pieces[i]["text"], re.IGNORECASE):
             left_index = i - 1
         # JMLR 格式的论文中, Copyright 符号之后的内容为页脚
-        if re.search(r"(?u)(c\u20dd)|(c\n\u20dd)(c\u25cb)||(\u00a9)", pieces[i]["text"], re.IGNORECASE):
+        if re.search(r"(?u)(c\u20dd)|(c\n\u20dd)|(c\u25cb)|(\u00a9)", pieces[i]["text"], re.IGNORECASE):
             right_index = i
+    # 如果找到了 "Editor" / "Abstract" 和 "Copyright", 则进行过滤
     if left_index != -1 and right_index != -1 and left_index < right_index:
         filtered_pieces = pieces[:left_index] + pieces[right_index:]
         return filtered_pieces
+    # 否则不进行过滤, 直接返回原始 pieces, 并且打印 pieces 信息
     else:
         print_pieces(pieces=pieces, pdf_source=pdf_source)
         return pieces
