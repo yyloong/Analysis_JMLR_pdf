@@ -11,6 +11,7 @@ import platform
 import argparse
 
 
+# 用全局变量记录 ANSI 颜色转义码
 BOLD = "\033[1m"
 RED = "\033[31m"
 GREEN = "\033[32m"
@@ -35,6 +36,12 @@ PiecesType: TypeAlias = List[Dict[str, Union[str, Tuple[float, float, float, flo
 
 class JMLRPDFExtractionError(Exception):
     """自定义异常类, 用于标识无法从中提取文本区块的 PDF 文件"""
+
+    pass
+
+
+class JMLRPDFParsingError(Exception):
+    """自定义异常类, 用于标识无法从中提取作者信息的文本区块"""
 
     pass
 
