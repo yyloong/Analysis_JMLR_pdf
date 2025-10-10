@@ -61,13 +61,14 @@ def normalize_text(text: str) -> str:
 
     # 兼容性分解, 彻底分解等价的 Unicode 字符, 如将 "ﬁ" 分解为 "fi"
     text = unicodedata.normalize("NFKD", text)
-    # 去除首尾空白符
-    text = text.strip()
     # 转义空格和换行符以外的空白符
     text = re.sub(r"\r\n", "\n", text)  # 先处理 Windows 风格换行
     text = re.sub(r"\r", "\n", text)  # 再处理 Mac 风格换行
     text = re.sub(r"\v", "\n", text)  # 垂直制表符视为换行符
     text = re.sub(r"(?u)[^\S \n]+", " ", text)  # 其他空白符视为空格
+    # 去除每行首尾空白符
+    text = "\n".join([line.strip() for line in text.split("\n")])
+    text = text.strip()
     return text
 
 
@@ -116,14 +117,62 @@ def coarse_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType
         # JMLR 格式的论文中, Copyright 符号之后的内容为页脚
         if re.search(r"(?u)(c\u20dd)|(c\n\u20dd)|(c\u25cb)|(\u00a9)", pieces[i]["text"], re.IGNORECASE):
             right_index = i
-    # 如果找到了 "Editor" / "Abstract" 和 "Copyright", 则进行过滤
+    # 如果找到了 "Editor" / "Abstract" 和 Copyright, 则进行过滤
     if left_index != -1 and right_index != -1 and left_index < right_index:
         filtered_pieces = pieces[:left_index] + pieces[right_index:]
         return filtered_pieces
     # 否则不进行过滤, 直接返回原始 pieces, 并且打印 pieces 信息
     else:
+        print(f"{RED}[!] Error: Cannot find 'Editor' / 'Abstract' and Copyright in {repr(pdf_source)}{RESET}")
         print_pieces(pieces=pieces, pdf_source=pdf_source)
-        return pieces
+        raise JMLRPDFExtractionError(f"Cannot find 'Editor' / 'Abstract' and Copyright in {repr(pdf_source)}")
+
+
+def fine_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType:
+    """
+    精筛文本区块, 整理语义信息
+
+    Args:
+        pieces (PiecesType): 待过滤的文本区块列表
+        pdf_source (str): PDF 文件来源, 用于打印调试信息
+    Returns:
+        PiecesType: 过滤后的文本区块列表
+    """
+
+    def parse_header(header: str = "") -> Dict[str, str]:
+        """
+        解析 JMLR 论文页眉, 提取卷号 (volume), 年份 (year), 页数 (n_pages), 投稿 (Submitted), 修改 (Revised), 发表 (Published) 日期
+
+        Args:
+            header (str): JMLR 论文页眉文本内容
+        Returns:
+            Dict[str, str]: 提取到的元信息字典, 包含 "volume", "year", "n_pages", "submitted", "revised", "published" 六个键, 所有值均为字符串
+        """
+        # TODO: 提取卷号 (volume), 年份 (year), 页数 (n_pages), 推断投稿 (Submitted), 修改 (Revised), 发表 (Published)日期
+        # TODO: 例如 "Journal of Machine Learning Research 21 (2020) 1-37\nSubmitted 9/18; Revised 12/19; Published 9/20"
+        # TODO: 可知  volume=21, year=2020, n_pages=37, submitted=2020.09.18, revised=2019.12.19, published=2019.09.20
+        # TODO: 注意倒推年份的逻辑, 如果前一个事件的日期相对更晚, 那么默认前一个事件早一年.
+        if len(header) == 0:
+            return {"volume": "", "year": "", "n_pages": "", "submitted": "", "revised": "", "published": ""}
+        else:
+            raise NotImplementedError()
+
+    # 出栈第一个文本区块作为 header, 即用于标识 JMLR 论文的页眉
+    if "Journal of Machine Learning Research" in pieces[0]["text"]:
+        header = pieces[0]["text"]
+        pieces = pieces[1:]
+    # 否则打印警告信息, 并且将 header 置为空字符串
+    else:
+        header = ""
+        print(
+            f"{YELLOW}[?] Warn: The first piece does not contain 'Journal of Machine Learning Research' in {repr(pdf_source)}{RESET}"
+        )
+
+    # 解析 header 元信息
+    header_info = parse_header(header=header)
+
+    filtered_pieces = pieces
+    return filtered_pieces
 
 
 def parse_jmlr_pdf(pdf_path: Path, verbose: bool = True) -> PiecesType:
@@ -164,7 +213,10 @@ def parse_jmlr_pdf(pdf_path: Path, verbose: bool = True) -> PiecesType:
     pieces.sort(key=lambda piece: (piece["rect"][1], piece["rect"][0]))
 
     # 粗筛文本区块, 过滤摘要和正文
-    pieces = coarse_filter_pieces(pieces=pieces, pdf_source=repr(pdf_path))
+    pieces = coarse_filter_pieces(pieces=pieces, pdf_source=pdf_path)
+
+    # 精筛文本区块, 整理语义信息
+    pieces = fine_filter_pieces(pieces=pieces, pdf_source=pdf_path)
 
     # 如果开启 verbose 模式, 打印文档区块内容
     if verbose:
@@ -183,7 +235,12 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    parse_jmlr_pdf(args.pdf_path, verbose=True)
+
+    if args.pdf_path is None or not args.pdf_path.exists():
+        print(f"{RED}[!] Error: Please provide a valid PDF file path using --pdf_path $PDF_PATH{RESET}")
+        return
+
+    parse_jmlr_pdf(args.pdf_path, verbose=False)
 
 
 def test() -> None:
@@ -200,6 +257,8 @@ def test() -> None:
             try:
                 parse_jmlr_pdf(pdf_path, verbose=False)
             except JMLRPDFExtractionError:
+                pass
+            except JMLRPDFParsingError:
                 pass
 
 
