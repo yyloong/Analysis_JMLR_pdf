@@ -115,7 +115,11 @@ def coarse_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType
         elif re.search(r"(?u)Abstract", pieces[i]["text"], re.IGNORECASE):
             left_index = i - 1
         # JMLR 格式的论文中, Copyright 符号之后的内容为页脚
-        if re.search(r"(?u)(c\u20dd)|(c\n\u20dd)|(c\u25cb)|(\u00a9)", pieces[i]["text"], re.IGNORECASE):
+        if re.search(
+            r"(?u)(c\u20dd)|(c\n\u20dd)|(c\u25cb)|(\u00a9)",
+            pieces[i]["text"],
+            re.IGNORECASE,
+        ):
             right_index = i
     # 如果找到了 "Editor" / "Abstract" 和 Copyright, 则进行过滤
     if left_index != -1 and right_index != -1 and left_index < right_index:
@@ -153,10 +157,17 @@ def fine_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType:
         # TODO: 可知  volume=21, year=2020, n_pages=37, submitted=2020.09.18, revised=2019.12.19, published=2019.09.20
         # TODO: 注意倒推年份的逻辑, 如果前一个事件的日期相对更晚, 那么默认前一个事件早一年.
         if len(header) == 0:
-            return {"volume": "", "year": "", "n_pages": "", "submitted": "", "revised": "", "published": ""}
+            return {
+                "volume": "",
+                "year": "",
+                "n_pages": "",
+                "submitted": "",
+                "revised": "",
+                "published": "",
+            }
         else:
             # 定义正则表达式模式
-            pattern = r'^\s*Journal of Machine Learning Research\s*(?:volume\s*)?(\d+\s*)?\((\d{4})\)\s*(\d+)[-\u2013](\d+)\s*[\r\n]*Submitted\s*(\d{1,2}/\d{1,2})\s*(?:[,;])?\s*(?:Revised\s*:?((?:\d{1,2}/\d{1,2}\s*)?);)?\s*Published\s*(\d{1,2}/\d{1,2}\s*)?$'
+            pattern = r"^\s*Journal of Machine Learning Research\s*(?:volume\s*)?(\d+\s*)?\((\d{4})\)\s*(\d+)[-\u2013](\d+)\s*[\r\n]*Submitted\s*(\d{1,2}/\d{1,2})\s*(?:[,;])?\s*(?:Revised\s*:?((?:\d{1,2}/\d{1,2}\s*)?);)?\s*Published\s*(\d{1,2}/\d{1,2}\s*)?$"
             match = re.match(pattern, header, re.IGNORECASE)
             if match:
                 volume = match.group(1).strip() if match.group(1) else ""
@@ -170,40 +181,66 @@ def fine_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType:
 
                 submitted = match.group(5).strip() if match.group(5) else ""
                 # 分割月份和日期, 如果缺失则置为 (13, 0)方便后续计算年份
-                submitted_month, submitted_day = (int(x) for x in submitted.split('/')) if submitted else (13, 0)
+                submitted_month, submitted_day = (int(x) for x in submitted.split("/")) if submitted else (13, 0)
 
                 revised = match.group(6).strip() if match.group(6) else ""
-                revised_month, revised_day = (int(x) for x in revised.split('/')) if revised else (13, 0)
+                revised_month, revised_day = (int(x) for x in revised.split("/")) if revised else (13, 0)
                 revised_year = None
 
                 published = match.group(7).strip() if match.group(7) else ""
-                published_month, published_day = (int(x) for x in published.split('/')) if published else (13, 0)
+                published_month, published_day = (int(x) for x in published.split("/")) if published else (13, 0)
                 published_year = None
 
-                # 处理日期, 推断年份 
+                # 处理日期, 推断年份
                 if published and year:
                     published_year = int(year)
                     published = f"{published_year}.{published_month:02d}.{published_day:02d}"
 
                 if revised and year:
-                    #判断年份
-                    revised_year = published_year - 1 if published_year and (revised_month > published_month or (revised_month == published_month and revised_day > published_day)) else int(year)
+                    # 判断年份
+                    revised_year = (
+                        published_year - 1
+                        if published_year
+                        and (
+                            revised_month > published_month
+                            or (revised_month == published_month and revised_day > published_day)
+                        )
+                        else int(year)
+                    )
                     revised = f"{revised_year}.{revised_month:02d}.{revised_day:02d}"
 
                 if submitted and year:
                     # 判断年份
-                    if revised_year and (submitted_month > revised_month or (submitted_month == revised_month and submitted_day > submitted_day)):
+                    if revised_year and (
+                        submitted_month > revised_month or (submitted_month == revised_month and submitted_day > submitted_day)
+                    ):
                         submitted_year = int(revised_year) - 1
-                    elif published_year and (submitted_month > published_month or (submitted_month == published_month and submitted_day > submitted_day)):
+                    elif published_year and (
+                        submitted_month > published_month
+                        or (submitted_month == published_month and submitted_day > submitted_day)
+                    ):
                         submitted_year = int(published_year) - 1
                     else:
                         submitted_year = int(year)
                     submitted = f"{submitted_year}.{submitted_month:02d}.{submitted_day:02d}"
-                return {"volume": volume, "year": year, "n_pages": n_pages, "submitted": submitted, "revised": revised, "published": published}
+                return {
+                    "volume": volume,
+                    "year": year,
+                    "n_pages": n_pages,
+                    "submitted": submitted,
+                    "revised": revised,
+                    "published": published,
+                }
             else:
                 print(f"{YELLOW}[?] Warn: Cannot parse header info from {repr(header)} in {repr(pdf_source)}{RESET}")
-                return {"volume": "", "year": "", "n_pages": "", "submitted": "", "revised": "", "published": ""}
-                
+                return {
+                    "volume": "",
+                    "year": "",
+                    "n_pages": "",
+                    "submitted": "",
+                    "revised": "",
+                    "published": "",
+                }
 
     # 出栈第一个文本区块作为 header, 即用于标识 JMLR 论文的页眉
     if "Journal of Machine Learning Research" in pieces[0]["text"]:
@@ -311,5 +348,5 @@ def test() -> None:
 
 
 if __name__ == "__main__":
-    #main()
+    # main()
     test()
