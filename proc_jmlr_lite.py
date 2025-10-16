@@ -153,9 +153,8 @@ def fine_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType:
             Dict[str, str]: 提取到的元信息字典, 包含 "volume", "year", "n_pages", "submitted", "revised", "published" 六个键, 所有值均为字符串
         """
         # TODO: 提取卷号 (volume), 年份 (year), 页数 (n_pages), 推断投稿 (Submitted), 修改 (Revised), 发表 (Published)日期
-        # TODO: 例如 "Journal of Machine Learning Research 21 (2020) 1-37\nSubmitted 9/18; Revised 12/19; Published 9/20"
-        # TODO: 可知  volume=21, year=2020, n_pages=37, submitted=2020.09.18, revised=2019.12.19, published=2019.09.20
-        # TODO: 注意倒推年份的逻辑, 如果前一个事件的日期相对更晚, 那么默认前一个事件早一年.
+        # TODO: 例如 "Journal of Machine Learning Research 21 (2020) 1-37\nSubmitted 9/18; Revised 12/19; Published 9/20,第二个数字代表年份"
+        # TODO: 可知  volume=21, year=2020, n_pages=37, submitted=2018.09, revised=2019.12, published=2020.09
         if len(header) == 0:
             return {
                 "volume": "",
@@ -179,50 +178,32 @@ def fine_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType:
 
                 n_pages = str(int(end_page) - int(start_page) + 1) if start_page and end_page else ""
 
+                # 处理日期逻辑
                 submitted = match.group(5).strip() if match.group(5) else ""
-                # 分割月份和日期, 如果缺失则置为 (13, 0)方便后续计算年份
-                submitted_month, submitted_day = (int(x) for x in submitted.split("/")) if submitted else (13, 0)
+                submitted_month, submitted_year = (int(x) for x in submitted.split("/")) if submitted else (0, 0)
+                if submitted != "":
+                    # 考虑1999这种特殊情况,先判断年份大小再拼接
+                    if int(year) >= int(f"{year[:2]}{submitted_year:02d}"):
+                        submitted = f"{year[:2]}{submitted_year:02d}.{submitted_month:02d}"
+                    else:
+                        submitted = f"{int(year[:2])-1}{submitted_year:02d}.{submitted_month:02d}"
 
                 revised = match.group(6).strip() if match.group(6) else ""
-                revised_month, revised_day = (int(x) for x in revised.split("/")) if revised else (13, 0)
-                revised_year = None
+                revised_month, revised_year = (int(x) for x in revised.split("/")) if revised else (0, 0)
+                if revised != "":
+                    if int(year) >= int(f"{year[:2]}{revised_year:02d}"):
+                        revised = f"{year[:2]}{revised_year:02d}.{revised_month:02d}"
+                    else:
+                        revised = f"{int(year[:2])-1}{revised_year:02d}.{revised_month:02d}"
 
                 published = match.group(7).strip() if match.group(7) else ""
-                published_month, published_day = (int(x) for x in published.split("/")) if published else (13, 0)
-                published_year = None
-
-                # 处理日期, 推断年份
-                if published and year:
-                    published_year = int(year)
-                    published = f"{published_year}.{published_month:02d}.{published_day:02d}"
-
-                if revised and year:
-                    # 判断年份
-                    revised_year = (
-                        published_year - 1
-                        if published_year
-                        and (
-                            revised_month > published_month
-                            or (revised_month == published_month and revised_day > published_day)
-                        )
-                        else int(year)
-                    )
-                    revised = f"{revised_year}.{revised_month:02d}.{revised_day:02d}"
-
-                if submitted and year:
-                    # 判断年份
-                    if revised_year and (
-                        submitted_month > revised_month or (submitted_month == revised_month and submitted_day > submitted_day)
-                    ):
-                        submitted_year = int(revised_year) - 1
-                    elif published_year and (
-                        submitted_month > published_month
-                        or (submitted_month == published_month and submitted_day > submitted_day)
-                    ):
-                        submitted_year = int(published_year) - 1
+                published_month, published_year = (int(x) for x in published.split("/")) if published else (13, 0)
+                if published != "":
+                    if int(year) >= int(f"{year[:2]}{published_year:02d}"):
+                        published = f"{year[:2]}{published_year:02d}.{published_month:02d}"
                     else:
-                        submitted_year = int(year)
-                    submitted = f"{submitted_year}.{submitted_month:02d}.{submitted_day:02d}"
+                        published = f"{int(year[:2])-1}{published_year:02d}.{published_month:02d}"
+
                 return {
                     "volume": volume,
                     "year": year,
