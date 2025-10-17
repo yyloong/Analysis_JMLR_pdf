@@ -299,6 +299,8 @@ def parse_jmlr_pdf(pdf_path: Path, verbose: bool = True) -> PiecesType:
     editor = search_info_from_pieces(pieces, r"(?u)Editor")
     if editor == "" or len(editor) < 5 or len(editor) > 100:
         print(f"{YELLOW}[?] Warn: Cannot find 'Editor' {repr(editor)} info in {repr(pdf_path)}{RESET}")
+    else:
+        editor = editor.split(":")[1].strip() if ":" in editor else editor.strip()
     
     keywords = search_info_from_pieces(pieces, r"(?u)Keywords?")
 
@@ -309,6 +311,8 @@ def parse_jmlr_pdf(pdf_path: Path, verbose: bool = True) -> PiecesType:
 
     if keywords == "" or len(keywords) < 8 or len(keywords) > 1000:
         print(f"{YELLOW}[?] Warn: Cannot find 'Keywords' {repr(keywords)} info in {repr(pdf_path)}{RESET}")
+    else:
+        keywords = keywords.split(":")[1].strip() if ":" in keywords else keywords.strip()
 
 
     # 如果没有提取到任何文本区块, 则报错
