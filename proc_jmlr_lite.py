@@ -119,7 +119,7 @@ def coarse_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType
             r"(?u)(c\u20dd)|(c\n\u20dd)|(c\u25cb)|(\u00a9)",
             pieces[i]["text"],
             re.IGNORECASE,
-        ):
+        ):  # type: ignore
             right_index = i
     # 如果找到了 "Editor" / "Abstract" 和 Copyright, 则进行过滤
     if left_index != -1 and right_index != -1 and left_index < right_index:
@@ -169,6 +169,7 @@ def fine_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType:
             pattern = r"^\s*Journal of Machine Learning Research\s*(?:volume\s*)?(\d+\s*)?\((\d{4})\)\s*(\d+)[-\u2013](\d+)\s*[\r\n]*Submitted\s*(\d{1,2}/\d{1,2})\s*(?:[,;])?\s*(?:Revised\s*:?((?:\d{1,2}/\d{1,2}\s*)?);)?\s*Published\s*(\d{1,2}/\d{1,2}\s*)?$"
             match = re.match(pattern, header, re.IGNORECASE)
             if match:
+                # 利用正则表达式获取信息
                 volume = match.group(1).strip() if match.group(1) else ""
 
                 year = match.group(2).strip() if match.group(2) else ""
@@ -178,31 +179,33 @@ def fine_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType:
 
                 n_pages = str(int(end_page) - int(start_page) + 1) if start_page and end_page else ""
 
-                # 处理日期逻辑
                 submitted = match.group(5).strip() if match.group(5) else ""
-                submitted_month, submitted_year = (int(x) for x in submitted.split("/")) if submitted else (0, 0)
-                if submitted != "":
-                    # 考虑1999这种特殊情况,先判断年份大小再拼接
-                    if int(year) >= int(f"{year[:2]}{submitted_year:02d}"):
-                        submitted = f"{year[:2]}{submitted_year:02d}.{submitted_month:02d}"
-                    else:
-                        submitted = f"{int(year[:2])-1}{submitted_year:02d}.{submitted_month:02d}"
-
                 revised = match.group(6).strip() if match.group(6) else ""
-                revised_month, revised_year = (int(x) for x in revised.split("/")) if revised else (0, 0)
-                if revised != "":
-                    if int(year) >= int(f"{year[:2]}{revised_year:02d}"):
-                        revised = f"{year[:2]}{revised_year:02d}.{revised_month:02d}"
-                    else:
-                        revised = f"{int(year[:2])-1}{revised_year:02d}.{revised_month:02d}"
-
                 published = match.group(7).strip() if match.group(7) else ""
-                published_month, published_year = (int(x) for x in published.split("/")) if published else (13, 0)
-                if published != "":
-                    if int(year) >= int(f"{year[:2]}{published_year:02d}"):
-                        published = f"{year[:2]}{published_year:02d}.{published_month:02d}"
-                    else:
-                        published = f"{int(year[:2])-1}{published_year:02d}.{published_month:02d}"
+
+                # 处理日期逻辑
+                # 提取出来的年份是两位数, 需要拼接上世纪或本世纪的前两位数字
+                # 例如 9/20 -> 2020.09, 12/19 -> 2019.12, 1/5 -> 2005.01
+                def year_process(year_str: str) -> str:
+                    if year_str:
+                        submitted_month, submitted_year = (int(x) for x in year_str.split("/"))
+                        # 考虑1999这种特殊情况,先判断年份大小再拼接
+                        if int(submitted_year) >= 90:
+                            year_str = f"19{submitted_year:02d}.{submitted_month:02d}"
+                        else:
+                            year_str = f"20{submitted_year:02d}.{submitted_month:02d}"
+                    return year_str
+
+                submitted = year_process(submitted)
+                revised = year_process(revised)
+                published = year_process(published)
+
+                """
+                # 打印调试信息
+                print(
+                    f"{GREEN}[+] Info: Parsed header info from {repr(header)} in {repr(pdf_source)}:{RESET},volume={volume}, year={year}, n_pages={n_pages}, submitted={submitted}, revised={revised}, published={published}"
+                )
+                """
 
                 return {
                     "volume": volume,
