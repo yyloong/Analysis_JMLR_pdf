@@ -104,16 +104,17 @@ def coarse_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType
         PiecesType: 过滤后的文本区块列表
     """
 
-    # "Editor" 之后, "Copyright" 之前, 完全丢弃
+    # "Editor" 之后, "Copyright" 之前, 除了keyword之外完全丢弃
     left_index = -1
     right_index = -1
     # 遍历 pieces, 找到 "Editor" / "Abstract" 和 "Copyright" 所在的区块索引
     for i in range(len(pieces)):
         # JMLR 格式的论文中, "Editor" 之后的内容为摘要
-        if re.search(r"(?u)Editor", pieces[i]["text"], re.IGNORECASE):
+        if re.search(r"(?u)Editor", pieces[i]["text"], re.IGNORECASE) and left_index == -1:
             left_index = i
-        elif re.search(r"(?u)Abstract", pieces[i]["text"], re.IGNORECASE):
+        elif re.search(r"(?u)Abstract", pieces[i]["text"], re.IGNORECASE) and left_index == -1:
             left_index = i - 1
+
         # JMLR 格式的论文中, Copyright 符号之后的内容为页脚
         if re.search(
             r"(?u)(c\u20dd)|(c\n\u20dd)|(c\u25cb)|(\u00a9)",
@@ -124,7 +125,7 @@ def coarse_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType
     # 如果找到了 "Editor" / "Abstract" 和 Copyright, 则进行过滤
     if left_index != -1 and right_index != -1 and left_index < right_index:
         filtered_pieces = pieces[:left_index] + pieces[right_index:]
-        return filtered_pieces
+        return filtered_pieces 
     # 否则不进行过滤, 直接返回原始 pieces, 并且打印 pieces 信息
     else:
         print(f"{RED}[!] Error: Cannot find 'Editor' / 'Abstract' and Copyright in {repr(pdf_source)}{RESET}")
@@ -241,7 +242,7 @@ def fine_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType:
     header_info = parse_header(header=header)
 
     filtered_pieces = pieces
-    return filtered_pieces
+    return filtered_pieces , header_info
 
 
 def parse_jmlr_pdf(pdf_path: Path, verbose: bool = True) -> PiecesType:
@@ -257,21 +258,58 @@ def parse_jmlr_pdf(pdf_path: Path, verbose: bool = True) -> PiecesType:
 
     # 打开文档, 准备提取内容
     jmlr = fitz.open(pdf_path)
-    pieces = []
 
-    # 仅需提取首页内容
+    # 从页面中提取文本区块的辅助函数
+    def get_pieces_from_page(page: fitz.Page) -> PiecesType:
+        pieces = []
+        blocks = page.get_text("blocks")
+        # 遍历首页区块, 请见 https://pymupdf.readthedocs.io/en/latest/textpage.html
+        for block in blocks:
+            x0, y0, x1, y1, text, block_no, block_type = block
+            # 仅需提取文本区块, 文本区块当且仅当 b_type == 0
+            if block_type != 0:
+                continue
+            # 正则化文本内容
+            text = normalize_text(text)
+            piece = {"text": text, "rect": (x0, y0, x1, y1)}
+            pieces.append(piece)
+        return pieces
+    
+    # 在文本区块列表中搜索匹配的文本内容的辅助函数
+    def search_info_from_pieces(pieces: PiecesType, pattern: str) -> str:
+        """
+        在文本区块列表中搜索匹配的文本内容
+
+        Args:
+            pieces (PiecesType): 文本区块列表
+            pattern (str): 用于搜索的正则表达式模式
+        Returns:
+            str: 如果找到匹配的文本内容, 则返回该内容; 否则返回 ""
+        """
+        for piece in pieces:
+            match = re.search(pattern, piece["text"], re.IGNORECASE)
+            if match:
+                return piece["text"][match.start():]
+        return ""
+
+    # 先筛选keyword和editor
     first_page = jmlr.load_page(0)
-    blocks = first_page.get_text("blocks")
-    # 遍历首页区块, 请见 https://pymupdf.readthedocs.io/en/latest/textpage.html
-    for block in blocks:
-        x0, y0, x1, y1, text, block_no, block_type = block
-        # 仅需提取文本区块, 文本区块当且仅当 b_type == 0
-        if block_type != 0:
-            continue
-        # 正则化文本内容
-        text = normalize_text(text)
-        piece = {"text": text, "rect": (x0, y0, x1, y1)}
-        pieces.append(piece)
+    pieces = get_pieces_from_page(page=first_page)
+
+    editor = search_info_from_pieces(pieces, r"(?u)Editor")
+    if editor == "" or len(editor) < 5 or len(editor) > 100:
+        print(f"{YELLOW}[?] Warn: Cannot find 'Editor' {repr(editor)} info in {repr(pdf_path)}{RESET}")
+    
+    keywords = search_info_from_pieces(pieces, r"(?u)Keywords?")
+
+    if keywords == "":
+        second_page = jmlr.load_page(1)
+        second_pieces = get_pieces_from_page(page=second_page)
+        keywords = search_info_from_pieces(second_pieces, r"(?u)Keywords?")
+
+    if keywords == "" or len(keywords) < 8 or len(keywords) > 1000:
+        print(f"{YELLOW}[?] Warn: Cannot find 'Keywords' {repr(keywords)} info in {repr(pdf_path)}{RESET}")
+
 
     # 如果没有提取到任何文本区块, 则报错
     if len(pieces) == 0:
@@ -285,7 +323,7 @@ def parse_jmlr_pdf(pdf_path: Path, verbose: bool = True) -> PiecesType:
     pieces = coarse_filter_pieces(pieces=pieces, pdf_source=pdf_path)
 
     # 精筛文本区块, 整理语义信息
-    pieces = fine_filter_pieces(pieces=pieces, pdf_source=pdf_path)
+    pieces , header_info = fine_filter_pieces(pieces=pieces, pdf_source=pdf_path)
 
     # 如果开启 verbose 模式, 打印文档区块内容
     if verbose:
@@ -293,7 +331,7 @@ def parse_jmlr_pdf(pdf_path: Path, verbose: bool = True) -> PiecesType:
 
     # 关闭文档, 返回内容
     jmlr.close()
-    return pieces
+    return pieces , header_info, editor, keywords
 
 
 def parse_args() -> argparse.Namespace:
