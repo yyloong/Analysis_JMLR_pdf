@@ -125,7 +125,7 @@ def coarse_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType
     # 如果找到了 "Editor" / "Abstract" 和 Copyright, 则进行过滤
     if left_index != -1 and right_index != -1 and left_index < right_index:
         filtered_pieces = pieces[:left_index] + pieces[right_index:]
-        return filtered_pieces 
+        return filtered_pieces
     # 否则不进行过滤, 直接返回原始 pieces, 并且打印 pieces 信息
     else:
         print(f"{RED}[!] Error: Cannot find 'Editor' / 'Abstract' and Copyright in {repr(pdf_source)}{RESET}")
@@ -242,7 +242,7 @@ def fine_filter_pieces(pieces: PiecesType, pdf_source: str = "") -> PiecesType:
     header_info = parse_header(header=header)
 
     filtered_pieces = pieces
-    return filtered_pieces , header_info
+    return filtered_pieces, header_info
 
 
 def parse_jmlr_pdf(pdf_path: Path, verbose: bool = True) -> PiecesType:
@@ -274,7 +274,7 @@ def parse_jmlr_pdf(pdf_path: Path, verbose: bool = True) -> PiecesType:
             piece = {"text": text, "rect": (x0, y0, x1, y1)}
             pieces.append(piece)
         return pieces
-    
+
     # 在文本区块列表中搜索匹配的文本内容的辅助函数
     def search_info_from_pieces(pieces: PiecesType, pattern: str) -> str:
         """
@@ -289,7 +289,7 @@ def parse_jmlr_pdf(pdf_path: Path, verbose: bool = True) -> PiecesType:
         for piece in pieces:
             match = re.search(pattern, piece["text"], re.IGNORECASE)
             if match:
-                return piece["text"][match.start():]
+                return piece["text"][match.start() :]
         return ""
 
     # 先筛选keyword和editor
@@ -301,7 +301,7 @@ def parse_jmlr_pdf(pdf_path: Path, verbose: bool = True) -> PiecesType:
         print(f"{YELLOW}[?] Warn: Cannot find 'Editor' {repr(editor)} info in {repr(pdf_path)}{RESET}")
     else:
         editor = editor.split(":")[1].strip() if ":" in editor else editor.strip()
-    
+
     keywords = search_info_from_pieces(pieces, r"(?u)Keywords?")
 
     if keywords == "":
@@ -313,7 +313,6 @@ def parse_jmlr_pdf(pdf_path: Path, verbose: bool = True) -> PiecesType:
         print(f"{YELLOW}[?] Warn: Cannot find 'Keywords' {repr(keywords)} info in {repr(pdf_path)}{RESET}")
     else:
         keywords = keywords.split(":")[1].strip() if ":" in keywords else keywords.strip()
-
 
     # 如果没有提取到任何文本区块, 则报错
     if len(pieces) == 0:
@@ -327,7 +326,7 @@ def parse_jmlr_pdf(pdf_path: Path, verbose: bool = True) -> PiecesType:
     pieces = coarse_filter_pieces(pieces=pieces, pdf_source=pdf_path)
 
     # 精筛文本区块, 整理语义信息
-    pieces , header_info = fine_filter_pieces(pieces=pieces, pdf_source=pdf_path)
+    pieces, header_info = fine_filter_pieces(pieces=pieces, pdf_source=pdf_path)
 
     # 如果开启 verbose 模式, 打印文档区块内容
     if verbose:
@@ -335,7 +334,7 @@ def parse_jmlr_pdf(pdf_path: Path, verbose: bool = True) -> PiecesType:
 
     # 关闭文档, 返回内容
     jmlr.close()
-    return pieces , header_info, editor, keywords
+    return pieces, header_info, editor, keywords
 
 
 def parse_args() -> argparse.Namespace:

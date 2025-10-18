@@ -194,9 +194,7 @@ class EditorsCollection:
             overall_summary = self.all_editors_review_time_summary()
             overall_avg_times = [avg for avg, _ in overall_summary.values() if avg is not None]
             overall_avg = mean(overall_avg_times) if overall_avg_times else 0
-            writer.writerow(
-                {"editor": "Overall Average Review Time", "total_paper_num": round(overall_avg, 2)}
-            )
+            writer.writerow({"editor": "Overall Average Review Time", "total_paper_num": round(overall_avg, 2)})
         print(f"Editors statistics written to {output_file}")
 
 
@@ -376,8 +374,7 @@ if __name__ == "__main__":
         Path(f"../JMLR 2021/{main_track}"),
         Path(f"../JMLR 2020/{main_track}"),
     ]
-    track = 'combination_track'
-
+    track = "combination_track"
 
     # 汇总所有年份的论文数据
     all_papers_list_with_year = {}
